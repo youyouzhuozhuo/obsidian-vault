@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-from common import call_deepseek, load_tag_vocabulary
+from common import call_deepseek, load_tag_vocabulary, short_summary, yaml_quote
 
 # ======= 配置区 =======
 VAULT_PATH = Path(os.environ.get("OBSIDIAN_VAULT_PATH", Path(__file__).resolve().parent))
@@ -101,11 +101,15 @@ def process_article_file(filepath, filename, vocab_str, processed):
     tags_yaml = "\n".join(f"  - {t}" for t in tags) if tags else "  - 未分类"
 
     new_content = f"""---
-title: "{safe_title}"
+title: {yaml_quote(safe_title)}
 date: {saved_date or time.strftime('%Y-%m-%dT%H:%M:%S')}
-source: "{source}"
-author: "{author}"
-url: "{url}"
+source: {yaml_quote(source)}
+author: {yaml_quote(author)}
+url: {yaml_quote(url)}
+summary: {yaml_quote(short_summary(body_clean))}
+status: raw
+reviewed: false
+content_type: article
 tags:
 {tags_yaml}
 ---
@@ -175,10 +179,14 @@ def process_daily_summary(filepath, filename, vocab_str, processed):
 
         out_name = f"{summary}_{int(time.time())}_{count}.md"
         new_content = f"""---
-title: "{summary}"
+title: {yaml_quote(summary)}
 date: {entry_date or time.strftime('%Y-%m-%dT%H:%M:%S')}
 source: "视频号"
-author: "{channel_name}"
+author: {yaml_quote(channel_name)}
+summary: {yaml_quote(short_summary(entry_text))}
+status: raw
+reviewed: false
+content_type: video_summary
 tags:
 {tags_yaml}
 ---

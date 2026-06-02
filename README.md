@@ -7,7 +7,21 @@
 - Obsidian Markdown 笔记
 - Telegram / 微信内容导入脚本
 - 标签词库和归档工具
+- 第二大脑控制台和长期记忆索引
 - 后续可加入的项目代码
+
+## 第二大脑入口
+
+- `MOC/第二大脑控制台.md`：Obsidian 内的总控制台，用于查看 Inbox、未分类、图片信息和重点主题。
+- `Memory/INDEX.md`：Claude Code / Codex / GPT 优先读取的长期记忆入口。
+- `Memory/AUTO_INDEX.md`：由脚本生成的结构统计和维护信号。
+- `AGENTS.md`、`CLAUDE.md`：给 Codex 和 Claude Code 的仓库使用说明。
+
+刷新自动索引：
+
+```bash
+python3 scripts/build_memory_index.py
+```
 
 ## 本地运行配置
 

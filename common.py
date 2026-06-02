@@ -77,6 +77,19 @@ def load_tag_vocabulary():
         return "\n".join(f"- {t}" for t in FALLBACK_TAGS)
 
 
+def yaml_quote(value):
+    """Return a YAML-safe quoted scalar."""
+    return json.dumps(str(value or ""), ensure_ascii=False)
+
+
+def short_summary(text, limit=120):
+    """Build a compact one-line summary fallback for frontmatter."""
+    clean = re.sub(r"\s+", " ", str(text or "")).strip()
+    if len(clean) <= limit:
+        return clean
+    return clean[:limit].rstrip() + "..."
+
+
 def call_deepseek(text, source_name, vocab_str):
     """调用 DeepSeek API 生成标签和双链文本"""
     if not DEEPSEEK_API_KEY:

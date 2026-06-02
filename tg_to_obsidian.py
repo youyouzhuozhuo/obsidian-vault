@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-from common import call_deepseek, load_tag_vocabulary
+from common import call_deepseek, load_tag_vocabulary, short_summary, yaml_quote
 
 # ======= 配置区 =======
 VAULT_PATH = Path(os.environ.get("OBSIDIAN_VAULT_PATH", Path(__file__).resolve().parent))
@@ -135,11 +135,17 @@ def process_message(item, vocab_str, processed_ids):
     # 构建 frontmatter + 内容
     tags_yaml = "\n".join(f"  - {t}" for t in tags) if tags else "  - 未分类"
     now = time.strftime('%Y-%m-%dT%H:%M:%S')
+    summary_text = short_summary(text or "图片信息")
+    content_type = "photo" if image_embed and not text.strip() else "text"
 
     md_content = f"""---
-title: "{summary}"
+title: {yaml_quote(summary)}
 date: {now}
-source: "{safe_chat_title}"
+source: {yaml_quote(safe_chat_title)}
+summary: {yaml_quote(summary_text)}
+status: raw
+reviewed: false
+content_type: {content_type}
 tags:
 {tags_yaml}
 ---
