@@ -16,7 +16,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from common import call_deepseek, load_tag_vocabulary, short_summary, yaml_quote
-from scripts.auto_analyze_notes import analyze_note, refresh_index
+from scripts.auto_analyze_notes import ROOT, analyze_note, auto_git_sync, refresh_index
 
 # ======= 配置区 =======
 VAULT_PATH = Path(os.environ.get("OBSIDIAN_VAULT_PATH", Path(__file__).resolve().parent))
@@ -147,6 +147,10 @@ tags:
 
     processed[filename] = file_hash_val
     save_processed(processed)
+    auto_git_sync(
+        [Path(out_path), Path(filepath), ROOT / "Memory" / "AUTO_INDEX.md"],
+        f"Sync WeChat article: {safe_title}",
+    )
     print(f"✅ [公众号] [{', '.join(tags)}] {out_name}")
     return True
 
@@ -167,6 +171,7 @@ def process_daily_summary(filepath, filename, vocab_str, processed):
     entries = re.split(r"(?=####\s*\[视频号\])", body)
 
     count = 0
+    created_paths = []
     for entry in entries:
         entry = entry.strip()
         if not entry or "####" not in entry:
@@ -209,6 +214,7 @@ tags:
         out_path = os.path.join(INBOX_PATH, out_name)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+        created_paths.append(Path(out_path))
 
         if AUTO_ANALYZE_ON_IMPORT:
             try:
@@ -232,6 +238,11 @@ tags:
 
     processed[filename] = file_hash_val
     save_processed(processed)
+    if count > 0:
+        auto_git_sync(
+            created_paths + [Path(filepath), ROOT / "Memory" / "AUTO_INDEX.md"],
+            f"Sync WeChat summary: {filename.replace('.md', '')}",
+        )
     return count > 0
 
 

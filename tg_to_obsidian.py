@@ -16,7 +16,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from common import call_deepseek, load_tag_vocabulary, short_summary, yaml_quote
-from scripts.auto_analyze_notes import analyze_note, refresh_index
+from scripts.auto_analyze_notes import ROOT, analyze_note, auto_git_sync, refresh_index
 
 # ======= 配置区 =======
 VAULT_PATH = Path(os.environ.get("OBSIDIAN_VAULT_PATH", Path(__file__).resolve().parent))
@@ -118,10 +118,13 @@ def process_message(item, vocab_str, processed_ids):
 
     # 下载图片
     image_embed = ""
+    image_path = None
     if "photo" in msg:
         photo = msg["photo"][-1]
         img_name = f"img_{int(time.time())}.jpg"
-        if get_tg_file(photo["file_id"], os.path.join(INBOX_PATH, "assets", img_name)):
+        candidate_image_path = Path(INBOX_PATH) / "assets" / img_name
+        if get_tg_file(photo["file_id"], candidate_image_path):
+            image_path = candidate_image_path
             image_embed = f"\n\n![[{img_name}]]"
 
     if not text.strip() and not image_embed:
@@ -168,6 +171,10 @@ tags:
         try:
             analyze_note(out_path, AUTO_ANALYZE_MAX_CHARS)
             refresh_index()
+            sync_paths = [out_path, ROOT / "Memory" / "AUTO_INDEX.md"]
+            if image_path:
+                sync_paths.append(image_path)
+            auto_git_sync(sync_paths, f"Sync Telegram note: {summary}")
             if AUTO_ANALYZE_DELAY > 0:
                 time.sleep(AUTO_ANALYZE_DELAY)
         except Exception as e:

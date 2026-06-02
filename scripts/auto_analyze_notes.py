@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import re
+import subprocess
 import time
 from typing import Any
 
@@ -51,6 +52,7 @@ DEEPSEEK_BASE_URL = os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.co
 DEEPSEEK_MODEL = os.environ.get("DEEPSEEK_ANALYSIS_MODEL", "deepseek-chat").strip()
 API_TIMEOUT = int(os.environ.get("DEEPSEEK_ANALYSIS_TIMEOUT", "90"))
 MAX_RETRIES = int(os.environ.get("DEEPSEEK_ANALYSIS_RETRIES", "2"))
+AUTO_GIT_SYNC_ON_IMPORT = os.environ.get("AUTO_GIT_SYNC_ON_IMPORT", "1") != "0"
 
 
 def parse_args() -> argparse.Namespace:
@@ -247,10 +249,38 @@ def analyze_note(note_path: Path, max_chars: int, dry_run: bool = False) -> bool
 
 
 def refresh_index() -> None:
-    import subprocess
     import sys
 
     subprocess.run([sys.executable, str(ROOT / "scripts" / "build_memory_index.py")], check=False)
+
+
+def auto_git_sync(paths: list[Path], message: str) -> None:
+    if not AUTO_GIT_SYNC_ON_IMPORT:
+        return
+
+    rel_paths: list[str] = []
+    for path in paths:
+        resolved = path.resolve()
+        try:
+            rel_paths.append(str(resolved.relative_to(ROOT)))
+        except ValueError:
+            continue
+
+    if not rel_paths:
+        return
+
+    try:
+        subprocess.run(["git", "add", "--", *rel_paths], cwd=ROOT, check=True)
+        status = subprocess.check_output(["git", "status", "--porcelain", "--", *rel_paths], cwd=ROOT, text=True)
+        if not status.strip():
+            return
+
+        subprocess.run(["git", "commit", "-m", message], cwd=ROOT, check=True)
+        branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=ROOT, text=True).strip()
+        subprocess.run(["git", "push", "origin", branch], cwd=ROOT, check=True)
+        print(f"✅ GitHub 已同步: {message}")
+    except Exception as exc:
+        print(f"⚠️ GitHub 自动同步失败，已保留本地变更: {exc}")
 
 
 def main() -> None:
