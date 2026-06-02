@@ -1,0 +1,21 @@
+[
+  {
+    "path": "Inbox/example.md",
+    "title": "示例标题",
+    "ai_score": 7,
+    "credibility": "medium",
+    "usefulness": "high",
+    "actionable": true,
+    "opportunity_type": "项目",
+    "summary": "这条信息提供了一个可验证的小工具方向。",
+    "credibility_analysis": "来源需要进一步核实，但需求描述明确，可以用小实验验证。",
+    "use_value": "适合转成一个轻量项目或内容选题。",
+    "development_direction": "做一个最小脚本或网页 demo，验证用户是否愿意使用。",
+    "content_direction": "可以写成一篇工具拆解或实测笔记。",
+    "next_action": "用 30 分钟列出 MVP 功能和一个测试场景。",
+    "risk": "可能只是营销信息，需要查证实际可用性。",
+    "memory_target": "Memory/TOPICS/AI工具与Agent.md",
+    "tags_suggested": ["AI/工具", "编程/开源项目"]
+  }
+]
+

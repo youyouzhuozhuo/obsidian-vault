@@ -115,6 +115,9 @@ def main() -> None:
     has_url = 0
     has_summary = 0
     has_status = 0
+    analyzed = 0
+    actionable = 0
+    high_score = 0
 
     for path in files:
         rel = path.relative_to(ROOT)
@@ -150,6 +153,15 @@ def main() -> None:
             has_summary += 1
         if "status" in meta:
             has_status += 1
+        if meta.get("analysis_status") == "done":
+            analyzed += 1
+        if meta.get("actionable") in {"true", "True", True}:
+            actionable += 1
+        try:
+            if int(str(meta.get("ai_score", "0"))) >= 8:
+                high_score += 1
+        except ValueError:
+            pass
         if len(compact_body(body)) < 20 and re.search(r"!\[\[|!\[", body):
             image_only += 1
 
@@ -185,6 +197,9 @@ generated: {now}
 | 有 URL | {has_url} |
 | 有 summary 字段 | {has_summary} |
 | 有 status 字段 | {has_status} |
+| 已完成 AI 分析 | {analyzed} |
+| 可行动机会 | {actionable} |
+| 高分信息 ai_score>=8 | {high_score} |
 | 重复 title 数 | {len(duplicate_titles)} |
 
 ## 文件夹分布

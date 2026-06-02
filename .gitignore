@@ -9,6 +9,8 @@ __pycache__/
 *.py[cod]
 Inbox/.tg_state.json
 Inbox/.wechat_processed.json
+Analysis/GPT_ANALYSIS_BATCH.md
+Analysis/GPT_ANALYSIS_RESULT.json
 
 # Sync/cache folders
 .DS_Store

@@ -15,6 +15,8 @@ tags:
 - [[ACTIVE_PROJECTS]]
 - [[WORKFLOWS]]
 - [[DECISIONS]]
+- [[../Prompts/GPT信息利用分析任务书|GPT 信息利用分析任务书]]
+- [[../Analysis/README|信息利用分析流程]]
 - [[TOPICS/AI工具与Agent]]
 - [[TOPICS/编程与项目]]
 - [[TOPICS/自媒体与商业]]
