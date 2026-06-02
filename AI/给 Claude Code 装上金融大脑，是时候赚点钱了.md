@@ -8,8 +8,13 @@ tags:
   - AI/Agent
   - 金融/量化交易
   - 编程/开源项目
+ai_score: 7
+credibility: "medium"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 来源：微信公众号-老章很忙
 
 内容：
@@ -73,3 +78,44 @@ npx skills add himself65/finance-skills -a
 #### 市场分析（10 个，最硬核）
 
 `finance-market-analysis` 插件，底层数据来自 [[yfinance]]，基本覆盖了量化分析的主要场
+
+## AI 分析
+
+- 评分：7/10
+- 可信度：medium
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：Claude Code、金融分析、Agent Skills、开源项目、量化投资
+
+### 信息本质
+
+介绍开源项目 finance-skills，为 Claude Code 提供 20 个金融分析技能，支持一键安装，覆盖市场分析、财报解读、期权策略等。
+
+### 可信度判断
+
+来源为微信公众号文章，作者老章很忙，内容具体且提供 GitHub 地址和安装命令，可信度中等。需核实项目实际维护状态和 yfinance 数据源的可靠性。
+
+### 可利用价值
+
+可直接安装到 Claude Code 中，提升金融分析能力，适合个人投资研究、量化分析、内容创作等场景。
+
+### 可开发方向
+
+可基于此项目开发定制化金融分析工作流，如自动化财报摘要、期权策略回测、市场情绪监控脚本。
+
+### 可内容化方向
+
+可制作教程视频或文章，如《一行命令给 Claude Code 装上金融大脑》《用 AI 做期权策略分析实操》。
+
+### 下一步
+
+在 Claude Code 中运行 `npx plugins add himself65/finance-skills` 安装，测试几个核心技能（如财报解读、市场分析），评估实际效果。
+
+### 风险
+
+金融分析涉及真实投资，项目声明为教育用途，不构成投资建议。yfinance 数据可能存在延迟或不准确，需谨慎用于实际交易。
+
+### 建议沉淀位置
+
+Projects/AI 工具集/Claude Code Skills

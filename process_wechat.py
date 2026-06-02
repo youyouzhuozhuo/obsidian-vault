@@ -16,6 +16,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from common import call_deepseek, load_tag_vocabulary, short_summary, yaml_quote
+from scripts.auto_analyze_notes import analyze_note, refresh_index
 
 # ======= 配置区 =======
 VAULT_PATH = Path(os.environ.get("OBSIDIAN_VAULT_PATH", Path(__file__).resolve().parent))
@@ -23,6 +24,9 @@ WECHAT_PATH = str(Path(os.environ.get("WECHAT_SYNC_PATH", VAULT_PATH / "笔记�
 INBOX_PATH = str(Path(os.environ.get("OBSIDIAN_INBOX_PATH", VAULT_PATH / "Inbox")))
 PROCESSED_LOG = os.path.join(INBOX_PATH, ".wechat_processed.json")
 POLL_INTERVAL = 30  # 扫描间隔（秒）
+AUTO_ANALYZE_ON_IMPORT = os.environ.get("AUTO_ANALYZE_ON_IMPORT", "1") != "0"
+AUTO_ANALYZE_MAX_CHARS = int(os.environ.get("AUTO_ANALYZE_MAX_CHARS", "4500"))
+AUTO_ANALYZE_DELAY = float(os.environ.get("AUTO_ANALYZE_DELAY", "1"))
 # =====================
 
 
@@ -126,6 +130,15 @@ tags:
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(new_content)
 
+    if AUTO_ANALYZE_ON_IMPORT:
+        try:
+            analyze_note(Path(out_path), AUTO_ANALYZE_MAX_CHARS)
+            refresh_index()
+            if AUTO_ANALYZE_DELAY > 0:
+                time.sleep(AUTO_ANALYZE_DELAY)
+        except Exception as e:
+            print(f"⚠️ AI 分析失败，已保留原始笔记: {e}")
+
     # 处理成功，删除笔记同步助手里的原件
     try:
         os.remove(filepath)
@@ -196,6 +209,15 @@ tags:
         out_path = os.path.join(INBOX_PATH, out_name)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+
+        if AUTO_ANALYZE_ON_IMPORT:
+            try:
+                analyze_note(Path(out_path), AUTO_ANALYZE_MAX_CHARS)
+                refresh_index()
+                if AUTO_ANALYZE_DELAY > 0:
+                    time.sleep(AUTO_ANALYZE_DELAY)
+            except Exception as e:
+                print(f"⚠️ AI 分析失败，已保留原始笔记: {e}")
 
         print(f"✅ [视频号-{channel_name}] [{', '.join(tags)}] {out_name}")
         count += 1

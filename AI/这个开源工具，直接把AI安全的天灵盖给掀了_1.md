@@ -6,8 +6,13 @@ author: "StableAI"
 url: "https://mp.weixin.qq.com/s?__biz=MzI3MzA0MTM1NQ==&mid=2247492291&idx=1&sn=02ad80d42b80d91125c7dcf305d17c3b&chksm=ea80865c2cbc8b43ff956a4cc16d815caeb49451f40d29ed1ffc5ae9ad5d51dd19d41a83981b&mpshare=1&scene=1&srcid=0401mrztGnQkcgQNPfSHLbkW&sharer_shareinfo=7bbdb412c442c031298d2be3f9cf31b9&sharer_shareinfo_first=7bbdb412c442c031298d2be3f9cf31b9#rd"
 tags:
   - AI/工具
+ai_score: 7
+credibility: "medium"
+usefulness: "high"
+actionable: true
+opportunity_type: "研究"
+analysis_status: "done"
 ---
-
 公众号名称：StableAI
 
 作者名称：StableAI
@@ -71,3 +76,44 @@ AutoTune更是离谱到家了。它会自动分析你在问什么问题，然后
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/Cr41NlAzXibR8Y4pWWVqmNOZaAWV0BR0HicIdlLPmNoibgWkHXCkr9m547xsvVGOW1ke46x4r2kicLhVIZuNDMz57lYp8NYQg8K02RfNZIUJK1s/0?wx_fmt=jpeg)
 
 原创 StableAI StableAI
+
+## AI 分析
+
+- 评分：7/10
+- 可信度：medium
+- 有用性：high
+- 可行动：是
+- 类型：研究
+- 建议标签：AI安全、越狱、开源工具、G0DM0D3、输入扰动
+
+### 信息本质
+
+介绍开源工具G0DM0D3，通过多模型竞赛和输入扰动技术绕过AI安全限制，引发AI自由与安全的争议。
+
+### 可信度判断
+
+来源为公众号，内容详实但带有营销和情绪化表达。项目真实存在（GitHub上可查），但具体效果可能被夸大。需要自行验证工具的实际能力和风险。
+
+### 可利用价值
+
+了解AI安全前沿攻击手段，可用于安全测试或研究AI模型的脆弱性，但需注意法律和伦理边界。
+
+### 可开发方向
+
+可开发AI安全测试工具或防御插件，用于检测和加固模型对抗输入扰动。
+
+### 可内容化方向
+
+可撰写AI安全科普文章、工具测评视频，或讨论AI自由与监管的平衡。
+
+### 下一步
+
+访问GitHub仓库elder-plinius/G0DM0D3，阅读README和代码，评估实际功能和风险。
+
+### 风险
+
+使用该工具可能违反AI服务条款，用于恶意目的有法律风险。工具本身可能包含恶意代码，需在隔离环境运行。
+
+### 建议沉淀位置
+
+Projects/AI安全研究

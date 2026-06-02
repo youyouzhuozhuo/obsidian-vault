@@ -6,8 +6,13 @@ author: "大A程序员"
 url: "https://mp.weixin.qq.com/s?__biz=MzY4NjExMzI4Mw==&mid=2247484126&idx=1&sn=13f1cc12f5f163511ba6951bc341a8c1&chksm=f2aab433caf49a0b5a0a932e7f14d3988b4dc054c801e81966568e43a69ddd44dc7e9eb09787&mpshare=1&scene=1&srcid=0331P2tPg5AORT2PRPk6ad7n&sharer_shareinfo=524bb8e8964c7488334a5027a3dff0b1&sharer_shareinfo_first=524bb8e8964c7488334a5027a3dff0b1#rd"
 tags:
   - AI/工具
+ai_score: 7
+credibility: "medium"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 公众号名称：大A程序员
 
 作者名称：大A程序员
@@ -169,3 +174,44 @@ Options:
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/nTm5gTQwgORfZibp4n4SNy9iaCmJDeRib0icpsHFI9mkmtvoibAODlCJIrGicBUqo8k8L3aiaVic3WUpdoBpSc5LM3NKM2krR5PibzFEnM9kL819T7icQ/0?wx_fmt=jpeg)
 
 原创 大A程序员 大A程序员
+
+## AI 分析
+
+- 评分：7/10
+- 可信度：medium
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：AI写作、小说创作、Claude Code、Cursor、技能
+
+### 信息本质
+
+介绍一个名为Chinese-Novelist的Claude Code/Cursor技能，通过结构化问答和分阶段流程辅助中文小说创作。
+
+### 可信度判断
+
+来源为个人公众号，无官方背书，但流程设计合理，技术实现可行（基于Claude Code技能）。需核实技能实际可用性和质量。
+
+### 可利用价值
+
+可作为AI辅助写作的参考案例，或直接用于小说创作项目，提升效率。
+
+### 可开发方向
+
+可封装为独立工具或MCP服务，支持更多题材和风格；也可集成到写作工作流中。
+
+### 可内容化方向
+
+可写评测文章、教程视频，或对比其他AI写作工具。
+
+### 下一步
+
+下载该技能，用Cursor或Claude Code测试一个短篇（10章）创作流程，评估输出质量。
+
+### 风险
+
+依赖第三方工具（Cursor/Claude Code），技能可能随版本更新失效；生成内容可能存在版权或质量风险。
+
+### 建议沉淀位置
+
+Projects/AI写作工具

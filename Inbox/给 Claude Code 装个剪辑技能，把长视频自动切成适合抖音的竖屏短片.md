@@ -8,8 +8,13 @@ tags:
   - AI/工具
   - 编程/开源项目
   - 自媒体/短视频
+ai_score: 8
+credibility: "high"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 **Clipify** 一款专为 [[Claude Code]] 终端助手开发的本地自动化视频剪辑扩展（Skill）。
 
 它能够将长视频快速转化为适合[[抖音]]、[[TikTok]]等平台的竖屏短视频，特别擅长处理播客、访谈类内容。
@@ -47,3 +52,44 @@ tags:
 ---
 
 内容效果不满意？[点此反馈](https://feedback.notebooksyncer.com/feedback/b884fd10_1778350099218?u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzkwODQzNzk1OQ%3D%3D%26mid%3D2247498150%26idx%3D1%26sn%3D7005a3ba9603430948554c57f2671b24%26chksm%3Dc187b66ad9a3632a2ffbf3ba9998e9f3f67f2c655e73bc61cb
+
+## AI 分析
+
+- 评分：8/10
+- 可信度：high
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：Claude Code、视频剪辑、自动化、Whisper、FFmpeg、抖音、TikTok、开源
+
+### 信息本质
+
+Clipify 是一个 Claude Code 的扩展，利用 Whisper 和 FFmpeg 实现本地自动化视频剪辑，将长视频转为竖屏短视频，适合播客和访谈内容。
+
+### 可信度判断
+
+来源为微信公众号，但项目开源且 GitHub 上有 293 Stars 和 32 Forks，技术方案描述详细（Whisper、FFmpeg、运动能量追踪），可信度高。需核实本地运行依赖是否满足。
+
+### 可利用价值
+
+可直接用于快速生成抖音/TikTok 短视频，节省手动剪辑时间，尤其适合播客和访谈类内容创作者。
+
+### 可开发方向
+
+可扩展为自动化短视频生产线，集成到内容发布工作流；或开发为独立 CLI 工具，支持更多平台。
+
+### 可内容化方向
+
+可制作教程视频或文章，介绍如何安装和使用 Clipify；或对比 Clipify 与其他剪辑工具（如 Opus）的效果。
+
+### 下一步
+
+在 macOS 上安装依赖（Claude Code、FFmpeg、Whisper、numpy），克隆项目并测试一个 5 分钟播客视频的剪辑效果。
+
+### 风险
+
+仅支持 macOS，Linux/Windows 需修改源码；依赖本地 Whisper 模型，对长视频处理可能较慢；运动能量追踪可能不适用于多人对话场景。
+
+### 建议沉淀位置
+
+Projects/AI 工具/视频剪辑自动化

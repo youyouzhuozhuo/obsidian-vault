@@ -6,8 +6,13 @@ author: "夹心"
 url: "https://mp.weixin.qq.com/s?__biz=MzY0MDcyODA5Ng==&mid=2247483864&idx=1&sn=dde867d147c93441ef13b84bf7d326f8&chksm=f08b8ffb0047b0fa85384724aaa6cca8c724d685779d58de46f70c2dcfe37712d1c2bbe5c74e&mpshare=1&scene=1&srcid=04021ye8Jj99b181zVhjomE3&sharer_shareinfo=048b55a9fcd59b64612aff5ca748e862&sharer_shareinfo_first=048b55a9fcd59b64612aff5ca748e862#rd"
 tags:
   - AI/工具
+ai_score: 7
+credibility: "medium"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 公众号名称：Jesse学习小角落
 
 作者名称：夹心
@@ -293,3 +298,44 @@ GitHub：https://github.com/ChiTing111/last30days-skill-cn
 ![cover_image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/0VE9kDxicLUjscfgDflWibYRic5eVHZIbuPpYFV3WwcQ55OmqWWuAquEm2PGGZ2MyMXpQmsTyckTpVD8UawoNJfBpDaPfPMjT5pwoqIgjKHZk8/0?wx_fmt=jpeg)
 
 Original 夹心 Jesse学习小角落
+
+## AI 分析
+
+- 评分：7/10
+- 可信度：medium
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：AI工具、信息聚合、本土化、开源、内容创作
+
+### 信息本质
+
+一个将英文AI信息聚合工具last30days-skill本土化为中文平台（微博、知乎、B站等）的开源项目，支持多平台搜索与智能评分。
+
+### 可信度判断
+
+来源为个人公众号，作者自称刚完成开发并开源，项目地址真实存在（GitHub）。但未提供实际使用案例或数据验证效果，接口稳定性、评分准确性需自行测试。可信度中等。
+
+### 可利用价值
+
+可直接用于快速获取中文互联网近30天热点话题的跨平台聚合信息，节省手动搜索时间，适合内容创作、竞品分析、趋势研究。
+
+### 可开发方向
+
+可扩展为自动化日报生成工具、自媒体选题助手、舆情监控脚本；或集成到Obsidian工作流中，定时抓取并生成笔记。
+
+### 可内容化方向
+
+可写评测文章（对比原版与本土版）、教程（如何配置使用）、案例（用该工具发现某个热点趋势），或制作短视频演示。
+
+### 下一步
+
+克隆项目到本地，按README配置至少一个平台（如B站），运行一条搜索命令，验证输出结果质量。
+
+### 风险
+
+部分平台（微博、小红书）需要Cookie或第三方API，存在账号封禁风险；项目刚开源，可能存在bug或维护不及时。
+
+### 建议沉淀位置
+
+Projects/AI工具集

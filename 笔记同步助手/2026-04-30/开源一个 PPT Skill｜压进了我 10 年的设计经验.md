@@ -6,8 +6,13 @@ saved: 2026-04-30 08:55:55
 tags:
   - 笔记同步助手
 id: d19489f9-9db3-4b95-b4bc-beaad063728a
+ai_score: 8
+credibility: "high"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 公众号名称：歸藏的AI工具箱
 
 作者名称：歸藏的 AI 工具箱
@@ -263,3 +268,44 @@ https://bloome.im/agent/join/iKXCLtkD?ref=wNL9Ew2G
 ---
 
 Original 歸藏的 AI 工具箱 歸藏的AI工具箱
+
+## AI 分析
+
+- 评分：8/10
+- 可信度：high
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：PPT、AI工具、Claude Code、设计、开源
+
+### 信息本质
+
+开源了一个基于 Claude Code 的 PPT 生成 Skill，将十年设计经验封装为规则，可生成杂志风格 HTML 幻灯片。
+
+### 可信度判断
+
+来源为知名 AI 工具博主，GitHub 仓库存在且可访问，内容详细、逻辑自洽，可信度高。
+
+### 可利用价值
+
+可直接用于快速生成高质量 PPT，尤其适合技术分享、产品发布等场景；其设计规则和协作流程可复用至其他内容生成。
+
+### 可开发方向
+
+可基于此 Skill 开发定制版（如增加更多主题、支持导出 PDF/PPTX）、或集成到自己的 AI 工作流中。
+
+### 可内容化方向
+
+可写文章或做视频分享使用体验、对比传统 PPT 制作效率、拆解设计规则。
+
+### 下一步
+
+克隆 GitHub 仓库，安装 Skill，用 Claude Code 生成一份测试 PPT。
+
+### 风险
+
+依赖 Claude Code 和网络，HTML 输出在部分老旧浏览器可能不兼容。
+
+### 建议沉淀位置
+
+Projects/AI工具/PPT生成

@@ -8,8 +8,13 @@ tags:
   - AI/工具
   - AI/Agent
   - 商业/创业
+ai_score: 9
+credibility: "high"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 来源：mp.weixin.qq.com-刘小排r
 
 内容：
@@ -84,3 +89,44 @@ Garry Tan老哥有点意思。
 我也推荐 /office-hours 给你，希望你喜欢。
 
 ![Image](https://relay-1.bijitongbu.site/p/75c7f9a4f396b7461f85c94a83c)
+
+## AI 分析
+
+- 评分：9/10
+- 可信度：high
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：Claude Code、gstack、AI教练、问题验证、YC方法论
+
+### 信息本质
+
+介绍gstack中的/office-hours skill，它不直接执行任务，而是通过一系列追问帮助用户澄清问题本质，避免在错误方向上浪费精力。
+
+### 可信度判断
+
+来源为刘小排的公众号文章，内容具体，引用了Garry Tan和YC的实践，逻辑自洽，可信度高。
+
+### 可利用价值
+
+提供了一个可立即使用的AI工具，帮助我在启动项目前验证问题真实性，避免盲目执行。
+
+### 可开发方向
+
+可以基于/office-hours的提问逻辑，开发一个独立的CLI工具或Obsidian插件，用于项目启动前的结构化思考。
+
+### 可内容化方向
+
+可以写一篇关于'如何用AI教练代替盲目执行'的文章，或制作一个短视频演示/office-hours的使用过程。
+
+### 下一步
+
+在Claude Code中安装gstack并运行/office-hours，针对当前一个模糊想法进行测试。
+
+### 风险
+
+过度依赖AI提问可能抑制直觉，需平衡使用。
+
+### 建议沉淀位置
+
+Projects/AI工具链

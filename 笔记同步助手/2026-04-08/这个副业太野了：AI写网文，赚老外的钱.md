@@ -6,8 +6,13 @@ saved: 2026-04-08 14:03:30
 tags:
   - 笔记同步助手
 id: 813e6fa3-453a-4b5f-a2ee-54699eab577d
+ai_score: 7
+credibility: "medium"
+usefulness: "high"
+actionable: true
+opportunity_type: "项目"
+analysis_status: "done"
 ---
-
 公众号名称：github漫游
 
 作者名称：saosir
@@ -177,3 +182,44 @@ AI负责：​把我200字的大纲，扩写成2000-3000词的英文章节
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/yFDuBkiaKFMFWVwJEgs7IUgB0Mm7Q2vlY3RgXEXtNEp1ibW4s4iaPkpfMNZar5uydGYoCicOZZYCoCgbBCnNz1kEseuzdXAj3aoY0wgasL7ozqs/0?wx_fmt=jpeg)
 
 saosir github漫游
+
+## AI 分析
+
+- 评分：7/10
+- 可信度：medium
+- 有用性：high
+- 可行动：是
+- 类型：项目
+- 建议标签：AI写作、副业、网文、出海、Claude
+
+### 信息本质
+
+利用AI工具（如Claude）辅助创作英文网文，在GoodNovel等海外平台连载赚钱的副业方法。
+
+### 可信度判断
+
+文章来自公众号，作者自称有实操经验，数据（月入$1500-2000）合理但无法验证。海外网文市场确实存在，但竞争也在加剧。需要自行注册平台验证流量和分成机制。
+
+### 可利用价值
+
+提供了一个低门槛、可复制的AI副业方向，适合利用业余时间尝试，投入成本低（Claude Pro $20/月），潜在收益可观。
+
+### 可开发方向
+
+可以开发一个自动化工作流：用Claude Code或脚本批量生成章节大纲、扩写、语法检查，甚至自动发布。也可以做一套Prompt模板或教程。
+
+### 可内容化方向
+
+可以制作系列内容：AI写网文从0到1教程、海外网文平台对比、爆款题材分析、收益复盘。适合小红书、公众号、B站。
+
+### 下一步
+
+花30分钟注册GoodNovel作者账号，浏览平台热门小说，确定一个题材（如Billionaire Romance），写出前3章大纲。
+
+### 风险
+
+平台政策可能收紧AI生成内容；收入不稳定，前期可能零收入；需要持续更新，否则流量下降；英文水平不足可能导致质量差。
+
+### 建议沉淀位置
+
+Projects/AI副业探索

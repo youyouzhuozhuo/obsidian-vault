@@ -8,8 +8,13 @@ tags:
   - AI/应用
   - 自媒体/内容创作
   - 编程/API
+ai_score: 8
+credibility: "high"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 最近看到知乎正式推出了他的官方**数据开放平台**，（https://developer.zhihu.com/ ），提供[[API]]、[[MCP]]和[[Skill]]三种接入方式，每天可以免费调用1000次！这对[[自媒体]]人、[[AI Agent]]开发者、内容创作者来说，简直是丰盛的素材宝库。
 
 ![](https://relay-1.bijitongbu.site/p/a3ddec97c24ff19583e5225f5545f22e.png)
@@ -70,3 +75,44 @@ tags:
     
 
 **步骤2：选择接入方式**平台支持三种主流方式
+
+## AI 分析
+
+- 评分：8/10
+- 可信度：high
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：知乎、API、MCP、AI Agent、自媒体、数据平台、热榜、内容创作
+
+### 信息本质
+
+知乎正式推出数据开放平台，提供API、MCP、Skill三种接入方式，每天免费1000次调用，支持全网搜索、知乎搜索、热榜API和直答Agent，适合自媒体和AI开发者。
+
+### 可信度判断
+
+信息来自微信公众号，但引用了官方链接（developer.zhihu.com），且描述的功能与知乎官方近期动作一致。可信度高，但建议亲自注册验证免费额度、接口稳定性及文档完整性。
+
+### 可利用价值
+
+可直接用于构建AI Agent（如Claude Code、Codex）获取高质量中文问答数据，或作为自媒体选题工具（热榜API）。免费额度对个人开发者足够，降低数据获取成本。
+
+### 可开发方向
+
+1. 开发一个基于知乎热榜API的每日热点摘要工具（Python脚本或MCP Server）。2. 结合Claude Code，用知乎搜索API构建研究助手，自动整理特定话题的高赞回答。3. 将知乎数据作为RAG知识库，用于AI编程或内容生成。
+
+### 可内容化方向
+
+1. 写一篇《知乎数据开放平台实测：用Claude Code调用热榜API做选题》教程。2. 制作短视频展示如何用MCP接入知乎搜索，快速获取写作素材。3. 小红书笔记：分享免费1000次/天的知乎API使用技巧。
+
+### 下一步
+
+1. 访问developer.zhihu.com注册账号，获取Access Secret。2. 用curl或Postman测试热榜API和全网搜索API，确认返回格式和稳定性。3. 在Obsidian中记录API密钥和初步测试结果。
+
+### 风险
+
+免费额度有限（1000次/天），高频使用需付费；数据使用需遵守知乎开发者协议，避免违规爬取或商用限制；API可能随平台调整而变化。
+
+### 建议沉淀位置
+
+Projects/AI工具/知乎数据开放平台

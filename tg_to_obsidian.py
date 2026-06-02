@@ -16,6 +16,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from common import call_deepseek, load_tag_vocabulary, short_summary, yaml_quote
+from scripts.auto_analyze_notes import analyze_note, refresh_index
 
 # ======= 配置区 =======
 VAULT_PATH = Path(os.environ.get("OBSIDIAN_VAULT_PATH", Path(__file__).resolve().parent))
@@ -23,6 +24,9 @@ BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 CF_PROXY_URL = os.environ.get("TELEGRAM_API_BASE_URL", "https://tg.youzhuo.online").rstrip("/")
 INBOX_PATH = str(Path(os.environ.get("OBSIDIAN_INBOX_PATH", VAULT_PATH / "Inbox")))
 STATE_FILE = os.path.join(INBOX_PATH, ".tg_state.json")
+AUTO_ANALYZE_ON_IMPORT = os.environ.get("AUTO_ANALYZE_ON_IMPORT", "1") != "0"
+AUTO_ANALYZE_MAX_CHARS = int(os.environ.get("AUTO_ANALYZE_MAX_CHARS", "4500"))
+AUTO_ANALYZE_DELAY = float(os.environ.get("AUTO_ANALYZE_DELAY", "1"))
 # =====================
 
 
@@ -153,12 +157,21 @@ tags:
 {linked_text}{image_embed}
 """
 
-    with open(os.path.join(INBOX_PATH, file_name), "w", encoding="utf-8") as f:
+    out_path = Path(INBOX_PATH) / file_name
+    with open(out_path, "w", encoding="utf-8") as f:
         f.write(md_content)
 
     processed_ids.add(update_id)
     tag_str = ", ".join(tags) if tags else "无标签"
     print(f"✅ [{tag_str}] {file_name}")
+    if AUTO_ANALYZE_ON_IMPORT:
+        try:
+            analyze_note(out_path, AUTO_ANALYZE_MAX_CHARS)
+            refresh_index()
+            if AUTO_ANALYZE_DELAY > 0:
+                time.sleep(AUTO_ANALYZE_DELAY)
+        except Exception as e:
+            print(f"⚠️ AI 分析失败，已保留原始笔记: {e}")
 
 
 def main():

@@ -3,7 +3,7 @@ title: 自动记忆索引
 tags:
   - memory
   - index
-generated: 2026-06-02 11:59:11
+generated: 2026-06-02 16:45:47
 ---
 
 # 自动记忆索引
@@ -18,13 +18,13 @@ generated: 2026-06-02 11:59:11
 | 有 frontmatter | 594 |
 | 无 tags | 33 |
 | 未分类标签 | 74 |
-| 图片-only 或近似图片-only | 63 |
+| 图片-only 或近似图片-only | 0 |
 | 有 URL | 146 |
 | 有 summary 字段 | 0 |
 | 有 status 字段 | 0 |
-| 已完成 AI 分析 | 20 |
-| 可行动机会 | 16 |
-| 高分信息 ai_score>=8 | 5 |
+| 已完成 AI 分析 | 576 |
+| 可行动机会 | 399 |
+| 高分信息 ai_score>=8 | 109 |
 | 重复 title 数 | 14 |
 
 ## 文件夹分布

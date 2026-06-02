@@ -8,8 +8,13 @@ tags:
   - AI/Agent
   - AI/模型
   - 编程/API
+ai_score: 8
+credibility: "medium"
+usefulness: "high"
+actionable: true
+opportunity_type: "工具"
+analysis_status: "done"
 ---
-
 ## Agent界不能没有Coding Plan和Max x20订阅，就像麻婆豆腐里不能没有豆腐。
 
 中转API确实能省钱，但缓存失效之后9折没了，额度虚标，速率跟不上，上下文被动缩水，这些苦我是一点也不想吃了。[[Claude]]的API我现在也没什么招，老被封。[[GPT Pro]]现在也不敢断，谁也不知道它会不会哪天也学一下友商，突然来个身份验证。
@@ -77,3 +82,44 @@ chmod +x install_stepfun_codex_adapter.sh
 检查你的电脑是否已经安装[[cc-switch]]和Codex，如果没有，它会帮你装好；
 
 在cc-switch里把Step的API转换成Codex需要的Res
+
+## AI 分析
+
+- 评分：8/10
+- 可信度：medium
+- 有用性：high
+- 可行动：是
+- 类型：工具
+- 建议标签：Codex、国产API、阶跃星辰、Agent、AI编程
+
+### 信息本质
+
+介绍如何将国产模型（阶跃星辰Step Plan）API接入Codex App，并验证核心玩法可用性，提供一键配置脚本。
+
+### 可信度判断
+
+来源为微信公众号，作者AI沃茨，内容具体（脚本、模型名、价格排名），但未提供官方验证链接，需自行测试脚本和API稳定性。
+
+### 可利用价值
+
+提供了一条低成本使用Codex的路径，利用国产API替代Claude/OpenAI，适合预算有限或API被封的用户。
+
+### 可开发方向
+
+可开发一个国产模型API适配器工具，支持多模型切换和自动配置；或基于此工作流构建自动化编程Agent。
+
+### 可内容化方向
+
+可写一篇《国产API接入Codex实战：省钱又稳定》的教程文章，或制作短视频演示配置过程。
+
+### 下一步
+
+运行脚本安装并测试Step Plan API在Codex中的效果，记录模型切换和上下文表现。
+
+### 风险
+
+国产API可能不稳定、速率限制、数据隐私风险；脚本来源需审查安全性。
+
+### 建议沉淀位置
+
+Projects/AI工具/Codex工作流
