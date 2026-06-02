@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x7b2c;&#x516b;&#x7ae0; &#x4eba;&#x529b;&#x8d44;&#x6e90;&#x7ba1;&#x7406;","children":[{"content":"&#x4e00;&#x3001;&#x6218;&#x7565;&#x6027;&#x4eba;&#x529b;&#x8d44;&#x6e90;&#x7ba1;&#x7406;","children":[{"content":"&#x5b9a;&#x4f4d;&#xff1a;&#x6218;&#x7565;&#x4f19;&#x4f34;","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"&#x5173;&#x6ce8;&#x70b9;&#xff1a;&#x4e0e;&#x7ec4;&#x7ec7;&#x6218;&#x7565;&#x5339;&#x914d;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x89d2;&#x8272;&#xff1a;&#x4ef7;&#x503c;&#x521b;&#x9020;&#x8005;","children":[],"payload":{"tag":"li","lines":"5,7"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x4e8c;&#x3001;&#x80dc;&#x4efb;&#x529b;&#x6a21;&#x578b;&#x4e0e;&#x62db;&#x8058;","children":[{"content":"&#x51b0;&#x5c71;&#x6a21;&#x578b;&#xff08;&#x9ea6;&#x514b;&#x5229;&#x5170;&#xff09;","children":[{"content":"&#x6c34;&#x9762;&#x4ee5;&#x4e0a;&#xff1a;&#x77e5;&#x8bc6;&#x3001;&#x6280;&#x80fd;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"&#x6c34;&#x9762;&#x4ee5;&#x4e0b;&#xff1a;&#x4ef7;&#x503c;&#x89c2;&#x3001;&#x81ea;&#x6211;&#x8ba4;&#x77e5;&#x3001;&#x7279;&#x8d28;&#x3001;&#x52a8;&#x673a;","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h3","lines":"8,9"}},{"content":"&#x6d0b;&#x8471;&#x6a21;&#x578b;&#xff08;&#x535a;&#x4e9a;&#x9f50;&#x65af;&#xff09;","children":[{"content":"&#x5916;&#x5c42;&#xff1a;&#x77e5;&#x8bc6;&#x548c;&#x6280;&#x80fd;","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"&#x4e2d;&#x5c42;&#xff1a;&#x6001;&#x5ea6;&#x3001;&#x4ef7;&#x503c;&#x89c2;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"&#x5185;&#x5c42;&#xff1a;&#x52a8;&#x673a;&#x548c;&#x7279;&#x8d28;","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h3","lines":"12,13"}},{"content":"&#x62db;&#x8058;&#x6e20;&#x9053;","children":[{"content":"&#x5185;&#x90e8;&#x62db;&#x8058;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"&#x5916;&#x90e8;&#x62db;&#x8058;","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"&#x730e;&#x5934;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"&#x6821;&#x56ed;&#x62db;&#x8058;","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"&#x7f51;&#x7edc;&#x62db;&#x8058;","children":[],"payload":{"tag":"li","lines":"22,24"}}],"payload":{"tag":"h3","lines":"17,18"}}],"payload":{"tag":"h2","lines":"7,8"}},{"content":"&#x4e09;&#x3001;&#x804c;&#x4e1a;&#x751f;&#x6daf;&#x89c4;&#x5212;","children":[{"content":"&#x65bd;&#x6069;&#x804c;&#x4e1a;&#x951a;&#xff08;8&#x79cd;&#xff09;","children":[{"content":"&#x6280;&#x672f;/&#x804c;&#x80fd;&#x578b;","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"&#x7ba1;&#x7406;&#x80fd;&#x529b;&#x578b;","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"&#x81ea;&#x4e3b;/&#x72ec;&#x7acb;&#x578b;","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"&#x5b89;&#x5168;/&#x7a33;&#x5b9a;&#x578b;","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"&#x521b;&#x9020;/&#x521b;&#x4e1a;&#x578b;","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"&#x670d;&#x52a1;/&#x5949;&#x732e;&#x578b;","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"&#x7eaf;&#x7cb9;&#x6311;&#x6218;&#x578b;","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"&#x751f;&#x6d3b;&#x578b;","children":[],"payload":{"tag":"li","lines":"33,35"}}],"payload":{"tag":"h3","lines":"25,26"}}],"payload":{"tag":"h2","lines":"24,25"}},{"content":"&#x56db;&#x3001;&#x7ee9;&#x6548;&#x7ba1;&#x7406;&#xff08;&#x6700;&#x91cd;&#x8981;&#xff09;","children":[{"content":"&#x65b9;&#x6cd5;&#x5bf9;&#x6bd4;","children":[{"content":"KPI&#xff08;&#x5173;&#x952e;&#x7ee9;&#x6548;&#x6307;&#x6807;&#xff09;","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"OKR&#xff08;&#x76ee;&#x6807;&#x4e0e;&#x5173;&#x952e;&#x7ed3;&#x679c;&#xff09;","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"BSC&#xff08;&#x5e73;&#x8861;&#x8ba1;&#x5206;&#x5361;&#xff09;","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"360&#x5ea6;&#x8bc4;&#x4f30;","children":[],"payload":{"tag":"li","lines":"40,42"}}],"payload":{"tag":"h3","lines":"36,37"}},{"content":"BSC&#x56db;&#x7ef4;&#x5ea6;","children":[{"content":"&#x8d22;&#x52a1;&#x7ef4;&#x5ea6;&#xff08;&#x80a1;&#x4e1c;&#xff09;","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"&#x5ba2;&#x6237;&#x7ef4;&#x5ea6;&#xff08;&#x5ba2;&#x6237;&#xff09;","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"&#x5185;&#x90e8;&#x6d41;&#x7a0b;&#x7ef4;&#x5ea6;&#xff08;&#x8fd0;&#x8425;&#xff09;","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"&#x5b66;&#x4e60;&#x4e0e;&#x6210;&#x957f;&#x7ef4;&#x5ea6;&#xff08;&#x5458;&#x5de5;&#xff09;","children":[],"payload":{"tag":"li","lines":"46,48"}}],"payload":{"tag":"h3","lines":"42,43"}},{"content":"KPI&#x8bbe;&#x8ba1;&#x539f;&#x5219;&#xff08;SMART&#xff09;","children":[{"content":"Specific&#xff08;&#x5177;&#x4f53;&#x7684;&#xff09;","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"Measurable&#xff08;&#x53ef;&#x8861;&#x91cf;&#x7684;&#xff09;","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"Achievable&#xff08;&#x53ef;&#x5b9e;&#x73b0;&#x7684;&#xff09;","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"Relevant&#xff08;&#x76f8;&#x5173;&#x7684;&#xff09;","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"Time-bound&#xff08;&#x6709;&#x65f6;&#x9650;&#x7684;&#xff09;","children":[],"payload":{"tag":"li","lines":"53,55"}}],"payload":{"tag":"h3","lines":"48,49"}},{"content":"&#x7ee9;&#x6548;&#x8003;&#x6838;&#x8bef;&#x5dee;","children":[{"content":"&#x6655;&#x8f6e;&#x6548;&#x5e94;","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"&#x8d8b;&#x4e2d;&#x503e;&#x5411;","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"&#x504f;&#x677e;/&#x504f;&#x4e25;","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"&#x8fd1;&#x56e0;&#x6548;&#x5e94;","children":[],"payload":{"tag":"li","lines":"59,61"}}],"payload":{"tag":"h3","lines":"55,56"}}],"payload":{"tag":"h2","lines":"35,36"}},{"content":"&#x4e94;&#x3001;&#x85aa;&#x916c;&#x65b9;&#x6848;&#x4e0e;&#x6fc0;&#x52b1;","children":[{"content":"&#x85aa;&#x916c;&#x4f53;&#x7cfb;&#x7c7b;&#x578b;","children":[{"content":"&#x5c97;&#x4f4d;&#x85aa;&#x916c;","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"&#x6280;&#x80fd;&#x85aa;&#x916c;","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"&#x7ee9;&#x6548;&#x85aa;&#x916c;","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"&#x5e02;&#x573a;&#x85aa;&#x916c;","children":[],"payload":{"tag":"li","lines":"66,68"}}],"payload":{"tag":"h3","lines":"62,63"}},{"content":"&#x80a1;&#x6743;&#x6fc0;&#x52b1;&#x7c7b;&#x578b;","children":[{"content":"&#x80a1;&#x7968;&#x671f;&#x6743;","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"&#x9650;&#x5236;&#x6027;&#x80a1;&#x7968;","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"&#x80a1;&#x7968;&#x589e;&#x503c;&#x6743;","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"&#x5458;&#x5de5;&#x6301;&#x80a1;&#x8ba1;&#x5212;&#xff08;ESOP&#xff09;","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"&#x865a;&#x62df;&#x80a1;&#x7968;","children":[],"payload":{"tag":"li","lines":"73,75"}}],"payload":{"tag":"h3","lines":"68,69"}},{"content":"&#x7ecf;&#x5178;&#x6fc0;&#x52b1;&#x7406;&#x8bba;","children":[{"content":"&#x9a6c;&#x65af;&#x6d1b;&#x9700;&#x6c42;&#x5c42;&#x6b21;","children":[],"payload":{"tag":"li","lines":"76,77"}},{"content":"&#x53cc;&#x56e0;&#x7d20;&#x7406;&#x8bba;&#xff08;&#x8d6b;&#x8328;&#x4f2f;&#x683c;&#xff09;","children":[],"payload":{"tag":"li","lines":"77,78"}},{"content":"&#x671f;&#x671b;&#x7406;&#x8bba;&#xff08;&#x5f17;&#x9c81;&#x59c6;&#xff09;","children":[],"payload":{"tag":"li","lines":"78,79"}},{"content":"&#x516c;&#x5e73;&#x7406;&#x8bba;&#xff08;&#x4e9a;&#x5f53;&#x65af;&#xff09;","children":[],"payload":{"tag":"li","lines":"79,80"}},{"content":"&#x76ee;&#x6807;&#x8bbe;&#x5b9a;&#x7406;&#x8bba;&#xff08;&#x6d1b;&#x514b;&#xff09;","children":[],"payload":{"tag":"li","lines":"80,81"}}],"payload":{"tag":"h3","lines":"75,76"}}],"payload":{"tag":"h2","lines":"61,62"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script>
+    <script>
+      ((r) => {
+          setTimeout(r);
+      })(() => {
+          const { markmap, mm } = window;
+          const toolbar = new markmap.Toolbar();
+          toolbar.attach(mm);
+          const el = toolbar.render();
+          el.setAttribute(
+              "style",
+              "position:absolute;bottom:20px;right:20px"
+          );
+          document.body.append(el);
+          
+          // Ensure the mind map fits the current view
+          setTimeout(() => {
+            if (mm && typeof mm.fit === 'function') {
+              mm.fit();
+            }
+          }, 1200);
+      });
+    </script>
+  
+
+    <!-- Add html-to-image library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+
+    <!-- Hidden element to store original Markdown content -->
+    <textarea id="original-markdown" style="display:none;"># 第八章 人力资源管理
+
+## 一、战略性人力资源管理
+- 定位：战略伙伴
+- 关注点：与组织战略匹配
+- 角色：价值创造者
+
+## 二、胜任力模型与招聘
+### 冰山模型（麦克利兰）
+- 水面以上：知识、技能
+- 水面以下：价值观、自我认知、特质、动机
+
+### 洋葱模型（博亚齐斯）
+- 外层：知识和技能
+- 中层：态度、价值观
+- 内层：动机和特质
+
+### 招聘渠道
+- 内部招聘
+- 外部招聘
+- 猎头
+- 校园招聘
+- 网络招聘
+
+## 三、职业生涯规划
+### 施恩职业锚（8种）
+- 技术/职能型
+- 管理能力型
+- 自主/独立型
+- 安全/稳定型
+- 创造/创业型
+- 服务/奉献型
+- 纯粹挑战型
+- 生活型
+
+## 四、绩效管理（最重要）
+### 方法对比
+- KPI（关键绩效指标）
+- OKR（目标与关键结果）
+- BSC（平衡计分卡）
+- 360度评估
+
+### BSC四维度
+- 财务维度（股东）
+- 客户维度（客户）
+- 内部流程维度（运营）
+- 学习与成长维度（员工）
+
+### KPI设计原则（SMART）
+- Specific（具体的）
+- Measurable（可衡量的）
+- Achievable（可实现的）
+- Relevant（相关的）
+- Time-bound（有时限的）
+
+### 绩效考核误差
+- 晕轮效应
+- 趋中倾向
+- 偏松/偏严
+- 近因效应
+
+## 五、薪酬方案与激励
+### 薪酬体系类型
+- 岗位薪酬
+- 技能薪酬
+- 绩效薪酬
+- 市场薪酬
+
+### 股权激励类型
+- 股票期权
+- 限制性股票
+- 股票增值权
+- 员工持股计划（ESOP）
+- 虚拟股票
+
+### 经典激励理论
+- 马斯洛需求层次
+- 双因素理论（赫茨伯格）
+- 期望理论（弗鲁姆）
+- 公平理论（亚当斯）
+- 目标设定理论（洛克）</textarea>
+
+    <style>
+      /* Export toolbar styles */
+      .mm-export-toolbar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 10px;
+      }
+      .mm-export-btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      .mm-export-btn:hover {
+        background-color: #2980b9;
+      }
+      .mm-copy-btn {
+        background-color: #27ae60;
+      }
+      .mm-copy-btn:hover {
+        background-color: #219653;
+      }
+      @media print {
+        .mm-export-toolbar { display: none !important; }
+        .mm-toolbar { display: none !important; }
+        svg.markmap, svg#mindmap, #mindmap svg { 
+          display: block !important;
+          visibility: visible !important; 
+          opacity: 1 !important;
+          height: 100vh !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          max-height: 100vh !important;
+          overflow: visible !important;
+          page-break-inside: avoid !important;
+        }
+        body, html {
+          height: 100% !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        // Create bottom export toolbar
+        const exportToolbar = document.createElement('div');
+        exportToolbar.className = 'mm-export-toolbar';
+        document.body.appendChild(exportToolbar);
+        
+        // Export as PNG image
+        const pngBtn = document.createElement('button');
+        pngBtn.className = 'mm-export-btn png-export';
+        pngBtn.innerHTML = 'Export PNG';
+        pngBtn.title = 'Export as PNG image';
+        pngBtn.onclick = () => {
+          exportToImage('png');
+        };
+        exportToolbar.appendChild(pngBtn);
+
+        // Export as JPG image
+        const jpgBtn = document.createElement('button');
+        jpgBtn.className = 'mm-export-btn jpg-export';
+        jpgBtn.innerHTML = 'Export JPG';
+        jpgBtn.title = 'Export as JPG image';
+        jpgBtn.onclick = () => {
+          exportToImage('jpeg');
+        };
+        exportToolbar.appendChild(jpgBtn);
+        
+        // Export as SVG image
+        const svgBtn = document.createElement('button');
+        svgBtn.className = 'mm-export-btn svg-export';
+        svgBtn.innerHTML = 'Export SVG';
+        svgBtn.title = 'Export as SVG image';
+        svgBtn.onclick = () => {
+          exportToImage('svg');
+        };
+        exportToolbar.appendChild(svgBtn);
+
+        // Copy original Markdown button
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'mm-export-btn mm-copy-btn copy-markdown';
+        copyBtn.innerHTML = 'Copy Markdown';
+        copyBtn.title = 'Copy original Markdown content';
+        copyBtn.onclick = copyOriginalMarkdown;
+        exportToolbar.appendChild(copyBtn);
+
+        // Function to copy original Markdown content
+        function copyOriginalMarkdown() {
+          try {
+            const markdownElement = document.getElementById('original-markdown');
+            if (!markdownElement) {
+              throw new Error('Original Markdown content not found');
+            }
+            
+            const markdownContent = markdownElement.value;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(markdownContent)
+              .then(() => {
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '✓ Copied';
+                copyBtn.style.backgroundColor = '#2ecc71';
+                
+                setTimeout(() => {
+                  copyBtn.innerHTML = originalText;
+                  copyBtn.style.backgroundColor = '';
+                }, 2000);
+              })
+              .catch(err => {
+                console.error('Copy failed:', err);
+                alert('Failed to copy to clipboard, please check browser permissions');
+              });
+          } catch (e) {
+            console.error('Error copying Markdown:', e);
+            alert('Unable to copy Markdown: ' + e.message);
+          }
+        }
+
+        // Function to export image
+        function exportToImage(format) {
+          try {
+            const node = window.mm.svg._groups[0][0];
+            
+            if (!node) {
+              throw new Error('Cannot find mind map SVG element');
+            }
+
+            window.mm.fit().then(() => {
+              const options = {
+                backgroundColor: "#ffffff", 
+                quality: 1.0,
+                width: node.getBoundingClientRect().width,
+                height: node.getBoundingClientRect().height
+              };
+              
+              const exportPromise = format === 'svg' 
+                ? htmlToImage.toSvg(node, options)
+                : format === 'jpeg' 
+                  ? htmlToImage.toJpeg(node, options) 
+                  : htmlToImage.toPng(node, options);
+              
+              exportPromise
+                .then((dataUrl) => {
+                  const link = document.createElement('a');
+                  const timestamp = new Date().toISOString().slice(0, 10);
+                  link.download = `markmap-${timestamp}.${format === 'jpeg' ? 'jpg' : format === 'svg' ? 'svg' : 'png'}`;
+                  link.href = dataUrl;
+                  link.click();
+                })
+                .catch((err) => console.error("Export failed:", err));
+            })
+            .catch((err) => {
+                throw err;
+            });
+              
+          } catch (e) {
+            console.error('Error exporting image:', e);
+            alert('Image export failed: ' + e.message);
+          }
+        }
+      })();
+    </script>
+  
+</body>
+</html>

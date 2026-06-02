@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x7b2c;&#x4e09;&#x7ae0; &#x5e02;&#x573a;&#x8425;&#x9500;&#x7ba1;&#x7406;","children":[{"content":"&#x4e00;&#x3001;&#x5e02;&#x573a;&#x8425;&#x9500;&#x7ba1;&#x7406;&#x8fc7;&#x7a0b;","children":[{"content":"&#x56db;&#x6b65;&#x9aa4;&#xff08;&#x6790;&#x9009;&#x7ec4;&#x7ba1;&#xff09;","children":[{"content":"&#x5206;&#x6790;&#x5e02;&#x573a;&#x673a;&#x4f1a;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x9009;&#x62e9;&#x76ee;&#x6807;&#x5e02;&#x573a;&#xff08;STP&#xff09;","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"&#x5236;&#x5b9a;&#x8425;&#x9500;&#x7ec4;&#x5408;&#xff08;4P/4C/4R&#xff09;","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"&#x7ba1;&#x7406;&#x8425;&#x9500;&#x6d3b;&#x52a8;","children":[],"payload":{"tag":"li","lines":"7,9"}}],"payload":{"tag":"h3","lines":"3,4"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x4e8c;&#x3001;&#x5e02;&#x573a;&#x8425;&#x9500;&#x4fe1;&#x606f;&#x7cfb;&#x7edf;","children":[{"content":"&#x56db;&#x4e2a;&#x5b50;&#x7cfb;&#x7edf;","children":[{"content":"&#x5185;&#x90e8;&#x62a5;&#x544a;&#x7cfb;&#x7edf;","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"&#x8425;&#x9500;&#x60c5;&#x62a5;&#x7cfb;&#x7edf;","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"&#x8425;&#x9500;&#x8c03;&#x7814;&#x7cfb;&#x7edf;","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"&#x8425;&#x9500;&#x5206;&#x6790;&#x7cfb;&#x7edf;","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h3","lines":"10,11"}},{"content":"&#x8c03;&#x7814;&#x65b9;&#x6cd5;","children":[{"content":"&#x89c2;&#x5bdf;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"&#x8be2;&#x95ee;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"&#x5b9e;&#x9a8c;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h3","lines":"16,17"}}],"payload":{"tag":"h2","lines":"9,10"}},{"content":"&#x4e09;&#x3001;STP&#x6218;&#x7565;&#xff08;&#x5fc5;&#x8003;&#xff09;","children":[{"content":"&#x5e02;&#x573a;&#x7ec6;&#x5206;","children":[{"content":"&#x6d88;&#x8d39;&#x8005;&#x5e02;&#x573a;&#xff1a;&#x5730;&#x7406;/&#x4eba;&#x53e3;/&#x5fc3;&#x7406;/&#x884c;&#x4e3a;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"&#x4ea7;&#x4e1a;&#x5e02;&#x573a;&#xff1a;&#x5730;&#x7406;/&#x884c;&#x4e1a;/&#x89c4;&#x6a21;/&#x8d2d;&#x4e70;&#x884c;&#x4e3a;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"&#x6709;&#x6548;&#x7ec6;&#x5206;&#x4e94;&#x6027;&#xff1a;&#x53ef;&#x8861;&#x91cf;/&#x53ef;&#x8fdb;&#x5165;/&#x53ef;&#x76c8;&#x5229;/&#x5dee;&#x5f02;&#x6027;/&#x53ef;&#x884c;&#x52a8;","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"22,23"}},{"content":"&#x76ee;&#x6807;&#x5e02;&#x573a;&#x9009;&#x62e9;","children":[{"content":"&#x65e0;&#x5dee;&#x5f02;&#x8425;&#x9500;&#x7b56;&#x7565;&#xff08;&#x540c;&#x8d28;&#x5e02;&#x573a;&#xff09;","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"&#x5dee;&#x5f02;&#x6027;&#x8425;&#x9500;&#x7b56;&#x7565;&#xff08;&#x5f02;&#x8d28;&#x5e02;&#x573a;&#xff09;","children":[],"payload":{"tag":"li","lines":"29,30"}},{"content":"&#x96c6;&#x4e2d;&#x6027;&#x8425;&#x9500;&#x7b56;&#x7565;&#xff08;&#x4e2d;&#x5c0f;&#x4f01;&#x4e1a;&#xff09;","children":[],"payload":{"tag":"li","lines":"30,32"}}],"payload":{"tag":"h3","lines":"27,28"}},{"content":"&#x5e02;&#x573a;&#x5b9a;&#x4f4d;","children":[{"content":"&#x907f;&#x5f3a;&#x5b9a;&#x4f4d;","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"&#x8fce;&#x5934;&#x5b9a;&#x4f4d;","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"&#x91cd;&#x65b0;&#x5b9a;&#x4f4d;","children":[],"payload":{"tag":"li","lines":"35,37"}}],"payload":{"tag":"h3","lines":"32,33"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"&#x56db;&#x3001;&#x8425;&#x9500;&#x7ec4;&#x5408;&#x7b56;&#x7565;","children":[{"content":"4P&#x7406;&#x8bba;&#xff08;&#x9ea6;&#x5361;&#x9521;&#xff09;","children":[{"content":"Product&#xff08;&#x4ea7;&#x54c1;&#xff09;","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"Price&#xff08;&#x4ef7;&#x683c;&#xff09;","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"Place&#xff08;&#x6e20;&#x9053;&#xff09;","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"Promotion&#xff08;&#x4fc3;&#x9500;&#xff09;","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"h3","lines":"38,39"}},{"content":"4C&#x7406;&#x8bba;&#xff08;&#x52b3;&#x7279;&#x670b;&#xff09;","children":[{"content":"Customer&#xff08;&#x987e;&#x5ba2;&#x9700;&#x6c42;&#xff09;","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"Cost&#xff08;&#x6210;&#x672c;&#xff09;","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"Convenience&#xff08;&#x4fbf;&#x5229;&#xff09;","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"Communication&#xff08;&#x6c9f;&#x901a;&#xff09;","children":[],"payload":{"tag":"li","lines":"48,50"}}],"payload":{"tag":"h3","lines":"44,45"}},{"content":"4R&#x7406;&#x8bba;&#xff08;&#x5510;&#xb7;&#x8212;&#x5c14;&#x8328;&#xff09;","children":[{"content":"Relevance&#xff08;&#x5173;&#x8054;&#xff09;","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"Reaction&#xff08;&#x53cd;&#x5e94;&#xff09;","children":[],"payload":{"tag":"li","lines":"52,53"}},{"content":"Relationship&#xff08;&#x5173;&#x7cfb;&#xff09;","children":[],"payload":{"tag":"li","lines":"53,54"}},{"content":"Reward&#xff08;&#x56de;&#x62a5;&#xff09;","children":[],"payload":{"tag":"li","lines":"54,56"}}],"payload":{"tag":"h3","lines":"50,51"}},{"content":"&#x4ea7;&#x54c1;&#x751f;&#x547d;&#x5468;&#x671f;","children":[{"content":"&#x5bfc;&#x5165;&#x671f;","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"&#x6210;&#x957f;&#x671f;","children":[],"payload":{"tag":"li","lines":"58,59"}},{"content":"&#x6210;&#x719f;&#x671f;","children":[],"payload":{"tag":"li","lines":"59,60"}},{"content":"&#x8870;&#x9000;&#x671f;","children":[],"payload":{"tag":"li","lines":"60,62"}}],"payload":{"tag":"h3","lines":"56,57"}},{"content":"&#x5b9a;&#x4ef7;&#x65b9;&#x6cd5;","children":[{"content":"&#x6210;&#x672c;&#x5bfc;&#x5411;","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"&#x9700;&#x6c42;&#x5bfc;&#x5411;","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"&#x7ade;&#x4e89;&#x5bfc;&#x5411;","children":[],"payload":{"tag":"li","lines":"65,67"}}],"payload":{"tag":"h3","lines":"62,63"}}],"payload":{"tag":"h2","lines":"37,38"}},{"content":"&#x4e94;&#x3001;&#x8425;&#x9500;&#x65b0;&#x9886;&#x57df;","children":[{"content":"&#x7eff;&#x8272;&#x8425;&#x9500;","children":[],"payload":{"tag":"li","lines":"68,69"}},{"content":"&#x7f51;&#x7edc;&#x8425;&#x9500;","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"&#x4f53;&#x9a8c;&#x8425;&#x9500;&#xff08;SEMM&#x6a21;&#x578b;&#xff09;","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"&#x5173;&#x7cfb;&#x8425;&#x9500;&#xff08;&#x4e09;&#x4e2a;&#x5c42;&#x6b21;&#xff09;","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"&#x6574;&#x5408;&#x8425;&#x9500;&#x4f20;&#x64ad;&#xff08;IMC&#xff09;","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"&#x6570;&#x5b57;&#x5316;&#x8425;&#x9500;","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"&#x793e;&#x4f1a;&#x8d23;&#x4efb;&#x8425;&#x9500;","children":[],"payload":{"tag":"li","lines":"74,75"}}],"payload":{"tag":"h2","lines":"67,68"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script>
+    <script>
+      ((r) => {
+          setTimeout(r);
+      })(() => {
+          const { markmap, mm } = window;
+          const toolbar = new markmap.Toolbar();
+          toolbar.attach(mm);
+          const el = toolbar.render();
+          el.setAttribute(
+              "style",
+              "position:absolute;bottom:20px;right:20px"
+          );
+          document.body.append(el);
+          
+          // Ensure the mind map fits the current view
+          setTimeout(() => {
+            if (mm && typeof mm.fit === 'function') {
+              mm.fit();
+            }
+          }, 1200);
+      });
+    </script>
+  
+
+    <!-- Add html-to-image library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+
+    <!-- Hidden element to store original Markdown content -->
+    <textarea id="original-markdown" style="display:none;"># 第三章 市场营销管理
+
+## 一、市场营销管理过程
+### 四步骤（析选组管）
+- 分析市场机会
+- 选择目标市场（STP）
+- 制定营销组合（4P/4C/4R）
+- 管理营销活动
+
+## 二、市场营销信息系统
+### 四个子系统
+- 内部报告系统
+- 营销情报系统
+- 营销调研系统
+- 营销分析系统
+
+### 调研方法
+- 观察法
+- 询问法
+- 实验法
+
+## 三、STP战略（必考）
+### 市场细分
+- 消费者市场：地理/人口/心理/行为
+- 产业市场：地理/行业/规模/购买行为
+- 有效细分五性：可衡量/可进入/可盈利/差异性/可行动
+
+### 目标市场选择
+- 无差异营销策略（同质市场）
+- 差异性营销策略（异质市场）
+- 集中性营销策略（中小企业）
+
+### 市场定位
+- 避强定位
+- 迎头定位
+- 重新定位
+
+## 四、营销组合策略
+### 4P理论（麦卡锡）
+- Product（产品）
+- Price（价格）
+- Place（渠道）
+- Promotion（促销）
+
+### 4C理论（劳特朋）
+- Customer（顾客需求）
+- Cost（成本）
+- Convenience（便利）
+- Communication（沟通）
+
+### 4R理论（唐·舒尔茨）
+- Relevance（关联）
+- Reaction（反应）
+- Relationship（关系）
+- Reward（回报）
+
+### 产品生命周期
+- 导入期
+- 成长期
+- 成熟期
+- 衰退期
+
+### 定价方法
+- 成本导向
+- 需求导向
+- 竞争导向
+
+## 五、营销新领域
+- 绿色营销
+- 网络营销
+- 体验营销（SEMM模型）
+- 关系营销（三个层次）
+- 整合营销传播（IMC）
+- 数字化营销
+- 社会责任营销</textarea>
+
+    <style>
+      /* Export toolbar styles */
+      .mm-export-toolbar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 10px;
+      }
+      .mm-export-btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      .mm-export-btn:hover {
+        background-color: #2980b9;
+      }
+      .mm-copy-btn {
+        background-color: #27ae60;
+      }
+      .mm-copy-btn:hover {
+        background-color: #219653;
+      }
+      @media print {
+        .mm-export-toolbar { display: none !important; }
+        .mm-toolbar { display: none !important; }
+        svg.markmap, svg#mindmap, #mindmap svg { 
+          display: block !important;
+          visibility: visible !important; 
+          opacity: 1 !important;
+          height: 100vh !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          max-height: 100vh !important;
+          overflow: visible !important;
+          page-break-inside: avoid !important;
+        }
+        body, html {
+          height: 100% !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        // Create bottom export toolbar
+        const exportToolbar = document.createElement('div');
+        exportToolbar.className = 'mm-export-toolbar';
+        document.body.appendChild(exportToolbar);
+        
+        // Export as PNG image
+        const pngBtn = document.createElement('button');
+        pngBtn.className = 'mm-export-btn png-export';
+        pngBtn.innerHTML = 'Export PNG';
+        pngBtn.title = 'Export as PNG image';
+        pngBtn.onclick = () => {
+          exportToImage('png');
+        };
+        exportToolbar.appendChild(pngBtn);
+
+        // Export as JPG image
+        const jpgBtn = document.createElement('button');
+        jpgBtn.className = 'mm-export-btn jpg-export';
+        jpgBtn.innerHTML = 'Export JPG';
+        jpgBtn.title = 'Export as JPG image';
+        jpgBtn.onclick = () => {
+          exportToImage('jpeg');
+        };
+        exportToolbar.appendChild(jpgBtn);
+        
+        // Export as SVG image
+        const svgBtn = document.createElement('button');
+        svgBtn.className = 'mm-export-btn svg-export';
+        svgBtn.innerHTML = 'Export SVG';
+        svgBtn.title = 'Export as SVG image';
+        svgBtn.onclick = () => {
+          exportToImage('svg');
+        };
+        exportToolbar.appendChild(svgBtn);
+
+        // Copy original Markdown button
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'mm-export-btn mm-copy-btn copy-markdown';
+        copyBtn.innerHTML = 'Copy Markdown';
+        copyBtn.title = 'Copy original Markdown content';
+        copyBtn.onclick = copyOriginalMarkdown;
+        exportToolbar.appendChild(copyBtn);
+
+        // Function to copy original Markdown content
+        function copyOriginalMarkdown() {
+          try {
+            const markdownElement = document.getElementById('original-markdown');
+            if (!markdownElement) {
+              throw new Error('Original Markdown content not found');
+            }
+            
+            const markdownContent = markdownElement.value;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(markdownContent)
+              .then(() => {
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '✓ Copied';
+                copyBtn.style.backgroundColor = '#2ecc71';
+                
+                setTimeout(() => {
+                  copyBtn.innerHTML = originalText;
+                  copyBtn.style.backgroundColor = '';
+                }, 2000);
+              })
+              .catch(err => {
+                console.error('Copy failed:', err);
+                alert('Failed to copy to clipboard, please check browser permissions');
+              });
+          } catch (e) {
+            console.error('Error copying Markdown:', e);
+            alert('Unable to copy Markdown: ' + e.message);
+          }
+        }
+
+        // Function to export image
+        function exportToImage(format) {
+          try {
+            const node = window.mm.svg._groups[0][0];
+            
+            if (!node) {
+              throw new Error('Cannot find mind map SVG element');
+            }
+
+            window.mm.fit().then(() => {
+              const options = {
+                backgroundColor: "#ffffff", 
+                quality: 1.0,
+                width: node.getBoundingClientRect().width,
+                height: node.getBoundingClientRect().height
+              };
+              
+              const exportPromise = format === 'svg' 
+                ? htmlToImage.toSvg(node, options)
+                : format === 'jpeg' 
+                  ? htmlToImage.toJpeg(node, options) 
+                  : htmlToImage.toPng(node, options);
+              
+              exportPromise
+                .then((dataUrl) => {
+                  const link = document.createElement('a');
+                  const timestamp = new Date().toISOString().slice(0, 10);
+                  link.download = `markmap-${timestamp}.${format === 'jpeg' ? 'jpg' : format === 'svg' ? 'svg' : 'png'}`;
+                  link.href = dataUrl;
+                  link.click();
+                })
+                .catch((err) => console.error("Export failed:", err));
+            })
+            .catch((err) => {
+                throw err;
+            });
+              
+          } catch (e) {
+            console.error('Error exporting image:', e);
+            alert('Image export failed: ' + e.message);
+          }
+        }
+      })();
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Runtime state and logs
+logs/
+__pycache__/
+*.py[cod]
+Inbox/.tg_state.json
+Inbox/.wechat_processed.json
+
+# Sync/cache folders
+.DS_Store
+.trash/
+.verysync/
+
+# Sync conflict artifacts
+*sync-conflict*
+*NSConflict*
+*冲突*
+
+# Obsidian local workspace and sensitive plugin data
+.obsidian/workspace*.json
+**/.obsidian/workspace*.json
+.obsidian/.obsidian-sync-helper-backup/
+**/.obsidian/.obsidian-sync-helper-backup/
+.obsidian/plugins/
+**/.obsidian/plugins/
+*.backup
+
+# Imported media assets are kept locally/Nutstore-side; GitHub is for text and code.
+Inbox/assets/
+笔记同步助手/images/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.mp4
+*.mov
+*.pdf

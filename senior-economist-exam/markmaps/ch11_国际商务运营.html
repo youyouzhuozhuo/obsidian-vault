@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x7b2c;&#x5341;&#x4e00;&#x7ae0; &#x56fd;&#x9645;&#x5546;&#x52a1;&#x8fd0;&#x8425;","children":[{"content":"&#x4e00;&#x3001;&#x56fd;&#x9645;&#x5546;&#x52a1;&#x4e0e;&#x8de8;&#x56fd;&#x516c;&#x53f8;","children":[{"content":"&#x8de8;&#x56fd;&#x516c;&#x53f8;&#x7c7b;&#x578b;","children":[{"content":"&#x591a;&#x56fd;&#x516c;&#x53f8;&#xff08;&#x672c;&#x5730;&#x5316;&#x9ad8;&#xff09;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x5168;&#x7403;&#x516c;&#x53f8;&#xff08;&#x96c6;&#x4e2d;&#x5316;&#x6218;&#x7565;&#xff09;","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"&#x8de8;&#x56fd;&#x516c;&#x53f8;&#xff08;&#x5168;&#x7403;&#x6574;&#x5408;+&#x672c;&#x5730;&#x54cd;&#x5e94;&#xff09;","children":[],"payload":{"tag":"li","lines":"6,8"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x5168;&#x7403;&#x5316;vs&#x672c;&#x5730;&#x5316;","children":[{"content":"&#x5168;&#x7403;&#x5316;&#x6218;&#x7565;&#xff08;&#x6807;&#x51c6;&#x5316;&#xff0c;&#x89c4;&#x6a21;&#x7ecf;&#x6d4e;&#xff09;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"&#x591a;&#x56fd;&#x5316;&#x6218;&#x7565;&#xff08;&#x672c;&#x5730;&#x5316;&#xff0c;&#x54cd;&#x5e94;&#x9700;&#x6c42;&#xff09;","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"&#x8de8;&#x56fd;&#x6218;&#x7565;&#xff08;&#x5e73;&#x8861;&#xff09;","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h3","lines":"8,9"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x4e8c;&#x3001;&#x56fd;&#x9645;&#x8d38;&#x6613;&#x7406;&#x8bba;&#xff08;&#x5fc5;&#x8003;&#x5bf9;&#x6bd4;&#xff09;","children":[{"content":"&#x7edd;&#x5bf9;&#x4f18;&#x52bf;&#x7406;&#x8bba;&#xff08;&#x4e9a;&#x5f53;&#xb7;&#x65af;&#x5bc6;&#xff0c;1776&#xff09;","children":[{"content":"&#x7edd;&#x5bf9;&#x6210;&#x672c;&#x4f18;&#x52bf;&#x2192;&#x4e13;&#x4e1a;&#x5316;&#x2192;&#x81ea;&#x7531;&#x8d38;&#x6613;","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h3","lines":"14,15"}},{"content":"&#x6bd4;&#x8f83;&#x4f18;&#x52bf;&#x7406;&#x8bba;&#xff08;&#x674e;&#x5609;&#x56fe;&#xff0c;1817&#xff09;","children":[{"content":"&#x4e24;&#x5229;&#x53d6;&#x91cd;&#x3001;&#x4e24;&#x5bb3;&#x53d6;&#x8f7b;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"&#x76f8;&#x5bf9;&#x6210;&#x672c;&#x5dee;&#x5f02;&#xff08;&#x673a;&#x4f1a;&#x6210;&#x672c;&#xff09;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h3","lines":"17,18"}},{"content":"&#x8981;&#x7d20;&#x7980;&#x8d4b;&#x7406;&#x8bba;&#xff08;H-O&#x7406;&#x8bba;&#xff09;","children":[{"content":"&#x5bc6;&#x96c6;&#x4f7f;&#x7528;&#x672c;&#x56fd;&#x4e30;&#x88d5;&#x8981;&#x7d20;","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"&#x8981;&#x7d20;&#x4ef7;&#x683c;&#x5747;&#x7b49;&#x5316;","children":[],"payload":{"tag":"li","lines":"23,25"}}],"payload":{"tag":"h3","lines":"21,22"}},{"content":"&#x91cc;&#x6602;&#x60d5;&#x592b;&#x4e4b;&#x8c1c;","children":[{"content":"&#x4e0e;H-O&#x7406;&#x8bba;&#x77db;&#x76fe;","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h3","lines":"25,26"}},{"content":"&#x4ea7;&#x54c1;&#x751f;&#x547d;&#x5468;&#x671f;&#x7406;&#x8bba;&#xff08;&#x5f17;&#x519c;&#xff09;","children":[{"content":"&#x521b;&#x65b0;&#x671f;&#x2192;&#x6210;&#x719f;&#x671f;&#x2192;&#x6807;&#x51c6;&#x5316;&#x671f;","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"h3","lines":"28,29"}},{"content":"&#x5185;&#x90e8;&#x5316;&#x7406;&#x8bba;","children":[{"content":"&#x5185;&#x90e8;&#x7ec4;&#x7ec7;&#x66ff;&#x4ee3;&#x5916;&#x90e8;&#x5e02;&#x573a;","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h3","lines":"31,32"}},{"content":"OLI&#x6298;&#x4e2d;&#x7406;&#x8bba;&#xff08;&#x9093;&#x5b81;&#xff0c;&#x5fc5;&#x8003;&#xff09;","children":[{"content":"O&#xff08;&#x6240;&#x6709;&#x6743;&#x4f18;&#x52bf;&#xff09;","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"L&#xff08;&#x533a;&#x4f4d;&#x4f18;&#x52bf;&#xff09;","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"I&#xff08;&#x5185;&#x90e8;&#x5316;&#x4f18;&#x52bf;&#xff09;","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"&#x4e09;&#x8005;&#x9f50;&#x5168;&#x2192;FDI","children":[],"payload":{"tag":"li","lines":"38,40"}}],"payload":{"tag":"h3","lines":"34,35"}}],"payload":{"tag":"h2","lines":"13,14"}},{"content":"&#x4e09;&#x3001;FDI&#x65b9;&#x5f0f;","children":[{"content":"&#x56db;&#x79cd;&#x65b9;&#x5f0f;","children":[{"content":"&#x5408;&#x8d44;&#x7ecf;&#x8425;","children":[],"payload":{"tag":"li","lines":"42,43"}},{"content":"&#x72ec;&#x8d44;&#x7ecf;&#x8425;","children":[],"payload":{"tag":"li","lines":"43,44"}},{"content":"&#x5e76;&#x8d2d;&#xff08;&#x5feb;&#x901f;&#x8fdb;&#x5165;&#xff09;","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"&#x7eff;&#x5730;&#x6295;&#x8d44;&#xff08;&#x5b8c;&#x5168;&#x63a7;&#x5236;&#xff09;","children":[],"payload":{"tag":"li","lines":"45,47"}}],"payload":{"tag":"h3","lines":"41,42"}}],"payload":{"tag":"h2","lines":"40,41"}},{"content":"&#x56db;&#x3001;&#x8de8;&#x56fd;&#x516c;&#x53f8;&#x7ec4;&#x7ec7;&#x7ed3;&#x6784;","children":[{"content":"&#x56fd;&#x9645;&#x90e8;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"&#x5168;&#x7403;&#x533a;&#x57df;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"&#x5168;&#x7403;&#x4ea7;&#x54c1;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"&#x5168;&#x7403;&#x77e9;&#x9635;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"&#x7f51;&#x7edc;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"li","lines":"52,54"}}],"payload":{"tag":"h2","lines":"47,48"}},{"content":"&#x4e94;&#x3001;&#x56fd;&#x9645;&#x8d38;&#x6613;&#x653f;&#x7b56;","children":[{"content":"&#x81ea;&#x7531;&#x8d38;&#x6613;&#x653f;&#x7b56;","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"&#x4fdd;&#x62a4;&#x8d38;&#x6613;&#x653f;&#x7b56;&#xff08;&#x5173;&#x7a0e;/&#x914d;&#x989d;/&#x8bb8;&#x53ef;&#x8bc1;&#xff09;","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"&#x6218;&#x7565;&#x6027;&#x8d38;&#x6613;&#x653f;&#x7b56;","children":[],"payload":{"tag":"li","lines":"57,58"}}],"payload":{"tag":"h2","lines":"54,55"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script>
+    <script>
+      ((r) => {
+          setTimeout(r);
+      })(() => {
+          const { markmap, mm } = window;
+          const toolbar = new markmap.Toolbar();
+          toolbar.attach(mm);
+          const el = toolbar.render();
+          el.setAttribute(
+              "style",
+              "position:absolute;bottom:20px;right:20px"
+          );
+          document.body.append(el);
+          
+          // Ensure the mind map fits the current view
+          setTimeout(() => {
+            if (mm && typeof mm.fit === 'function') {
+              mm.fit();
+            }
+          }, 1200);
+      });
+    </script>
+  
+
+    <!-- Add html-to-image library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+
+    <!-- Hidden element to store original Markdown content -->
+    <textarea id="original-markdown" style="display:none;"># 第十一章 国际商务运营
+
+## 一、国际商务与跨国公司
+### 跨国公司类型
+- 多国公司（本地化高）
+- 全球公司（集中化战略）
+- 跨国公司（全球整合+本地响应）
+
+### 全球化vs本地化
+- 全球化战略（标准化，规模经济）
+- 多国化战略（本地化，响应需求）
+- 跨国战略（平衡）
+
+## 二、国际贸易理论（必考对比）
+### 绝对优势理论（亚当·斯密，1776）
+- 绝对成本优势→专业化→自由贸易
+
+### 比较优势理论（李嘉图，1817）
+- 两利取重、两害取轻
+- 相对成本差异（机会成本）
+
+### 要素禀赋理论（H-O理论）
+- 密集使用本国丰裕要素
+- 要素价格均等化
+
+### 里昂惕夫之谜
+- 与H-O理论矛盾
+
+### 产品生命周期理论（弗农）
+- 创新期→成熟期→标准化期
+
+### 内部化理论
+- 内部组织替代外部市场
+
+### OLI折中理论（邓宁，必考）
+- O（所有权优势）
+- L（区位优势）
+- I（内部化优势）
+- 三者齐全→FDI
+
+## 三、FDI方式
+### 四种方式
+- 合资经营
+- 独资经营
+- 并购（快速进入）
+- 绿地投资（完全控制）
+
+## 四、跨国公司组织结构
+- 国际部结构
+- 全球区域结构
+- 全球产品结构
+- 全球矩阵结构
+- 网络结构
+
+## 五、国际贸易政策
+- 自由贸易政策
+- 保护贸易政策（关税/配额/许可证）
+- 战略性贸易政策</textarea>
+
+    <style>
+      /* Export toolbar styles */
+      .mm-export-toolbar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 10px;
+      }
+      .mm-export-btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      .mm-export-btn:hover {
+        background-color: #2980b9;
+      }
+      .mm-copy-btn {
+        background-color: #27ae60;
+      }
+      .mm-copy-btn:hover {
+        background-color: #219653;
+      }
+      @media print {
+        .mm-export-toolbar { display: none !important; }
+        .mm-toolbar { display: none !important; }
+        svg.markmap, svg#mindmap, #mindmap svg { 
+          display: block !important;
+          visibility: visible !important; 
+          opacity: 1 !important;
+          height: 100vh !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          max-height: 100vh !important;
+          overflow: visible !important;
+          page-break-inside: avoid !important;
+        }
+        body, html {
+          height: 100% !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        // Create bottom export toolbar
+        const exportToolbar = document.createElement('div');
+        exportToolbar.className = 'mm-export-toolbar';
+        document.body.appendChild(exportToolbar);
+        
+        // Export as PNG image
+        const pngBtn = document.createElement('button');
+        pngBtn.className = 'mm-export-btn png-export';
+        pngBtn.innerHTML = 'Export PNG';
+        pngBtn.title = 'Export as PNG image';
+        pngBtn.onclick = () => {
+          exportToImage('png');
+        };
+        exportToolbar.appendChild(pngBtn);
+
+        // Export as JPG image
+        const jpgBtn = document.createElement('button');
+        jpgBtn.className = 'mm-export-btn jpg-export';
+        jpgBtn.innerHTML = 'Export JPG';
+        jpgBtn.title = 'Export as JPG image';
+        jpgBtn.onclick = () => {
+          exportToImage('jpeg');
+        };
+        exportToolbar.appendChild(jpgBtn);
+        
+        // Export as SVG image
+        const svgBtn = document.createElement('button');
+        svgBtn.className = 'mm-export-btn svg-export';
+        svgBtn.innerHTML = 'Export SVG';
+        svgBtn.title = 'Export as SVG image';
+        svgBtn.onclick = () => {
+          exportToImage('svg');
+        };
+        exportToolbar.appendChild(svgBtn);
+
+        // Copy original Markdown button
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'mm-export-btn mm-copy-btn copy-markdown';
+        copyBtn.innerHTML = 'Copy Markdown';
+        copyBtn.title = 'Copy original Markdown content';
+        copyBtn.onclick = copyOriginalMarkdown;
+        exportToolbar.appendChild(copyBtn);
+
+        // Function to copy original Markdown content
+        function copyOriginalMarkdown() {
+          try {
+            const markdownElement = document.getElementById('original-markdown');
+            if (!markdownElement) {
+              throw new Error('Original Markdown content not found');
+            }
+            
+            const markdownContent = markdownElement.value;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(markdownContent)
+              .then(() => {
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '✓ Copied';
+                copyBtn.style.backgroundColor = '#2ecc71';
+                
+                setTimeout(() => {
+                  copyBtn.innerHTML = originalText;
+                  copyBtn.style.backgroundColor = '';
+                }, 2000);
+              })
+              .catch(err => {
+                console.error('Copy failed:', err);
+                alert('Failed to copy to clipboard, please check browser permissions');
+              });
+          } catch (e) {
+            console.error('Error copying Markdown:', e);
+            alert('Unable to copy Markdown: ' + e.message);
+          }
+        }
+
+        // Function to export image
+        function exportToImage(format) {
+          try {
+            const node = window.mm.svg._groups[0][0];
+            
+            if (!node) {
+              throw new Error('Cannot find mind map SVG element');
+            }
+
+            window.mm.fit().then(() => {
+              const options = {
+                backgroundColor: "#ffffff", 
+                quality: 1.0,
+                width: node.getBoundingClientRect().width,
+                height: node.getBoundingClientRect().height
+              };
+              
+              const exportPromise = format === 'svg' 
+                ? htmlToImage.toSvg(node, options)
+                : format === 'jpeg' 
+                  ? htmlToImage.toJpeg(node, options) 
+                  : htmlToImage.toPng(node, options);
+              
+              exportPromise
+                .then((dataUrl) => {
+                  const link = document.createElement('a');
+                  const timestamp = new Date().toISOString().slice(0, 10);
+                  link.download = `markmap-${timestamp}.${format === 'jpeg' ? 'jpg' : format === 'svg' ? 'svg' : 'png'}`;
+                  link.href = dataUrl;
+                  link.click();
+                })
+                .catch((err) => console.error("Export failed:", err));
+            })
+            .catch((err) => {
+                throw err;
+            });
+              
+          } catch (e) {
+            console.error('Error exporting image:', e);
+            alert('Image export failed: ' + e.message);
+          }
+        }
+      })();
+    </script>
+  
+</body>
+</html>

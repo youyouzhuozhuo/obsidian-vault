@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x7b2c;&#x4e00;&#x7ae0; &#x4f01;&#x4e1a;&#x804c;&#x80fd;&#x4e0e;&#x6218;&#x7565;&#x51b3;&#x7b56;","children":[{"content":"&#x7b2c;&#x4e00;&#x8282; &#x4f01;&#x4e1a;&#x4e0e;&#x4f01;&#x4e1a;&#x7ba1;&#x7406;&#x7684;&#x804c;&#x80fd;","children":[{"content":"&#x4f01;&#x4e1a;&#x7684;&#x6982;&#x5ff5;&#x4e0e;&#x7279;&#x5f81;","children":[{"content":"&#x7ecf;&#x6d4e;&#x6027;&#xff08;&#x4ee5;&#x8425;&#x5229;&#x4e3a;&#x76ee;&#x7684;&#xff09;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x793e;&#x4f1a;&#x6027;&#xff08;&#x6ee1;&#x8db3;&#x793e;&#x4f1a;&#x9700;&#x8981;&#xff09;","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"&#x72ec;&#x7acb;&#x6027;&#xff08;&#x81ea;&#x4e3b;&#x7ecf;&#x8425;&#x3001;&#x81ea;&#x8d1f;&#x76c8;&#x4e8f;&#xff09;","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"&#x6cd5;&#x4eba;&#x6027;&#xff08;&#x4f9d;&#x6cd5;&#x8bbe;&#x7acb;&#xff09;","children":[],"payload":{"tag":"li","lines":"7,9"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x4f01;&#x4e1a;&#x7ba1;&#x7406;&#x7684;&#x804c;&#x80fd;&#xff08;&#x51b3;&#x7ec4;&#x9886;&#x63a7;&#x521b;&#x6fc0;&#xff09;","children":[{"content":"&#x51b3;&#x7b56;&#xff08;&#x505a;&#x6b63;&#x786e;&#x7684;&#x4e8b;&#xff09;","children":[],"payload":{"tag":"li","lines":"10,11"}},{"content":"&#x8ba1;&#x5212;&#xff08;&#x84dd;&#x56fe;&#x4e0e;&#x8def;&#x5f84;&#xff09;","children":[],"payload":{"tag":"li","lines":"11,12"}},{"content":"&#x7ec4;&#x7ec7;&#xff08;&#x642d;&#x73ed;&#x5b50;&#xff09;","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"&#x9886;&#x5bfc;&#xff08;&#x5e26;&#x961f;&#x4f0d;&#xff09;","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"&#x63a7;&#x5236;&#xff08;&#x7ea0;&#x504f;&#xff09;","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"&#x521b;&#x65b0;&#xff08;&#x53d8;&#x9769;&#x56fe;&#x5f3a;&#xff09;","children":[],"payload":{"tag":"li","lines":"15,17"}}],"payload":{"tag":"h3","lines":"9,10"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x7b2c;&#x4e8c;&#x8282; &#x4f01;&#x4e1a;&#x6218;&#x7565;&#x5206;&#x6790;","children":[{"content":"&#x4f01;&#x4e1a;&#x6218;&#x7565;&#x7684;&#x5c42;&#x6b21;","children":[{"content":"&#x603b;&#x4f53;&#x6218;&#x7565;&#xff08;&#x516c;&#x53f8;&#x5c42;&#xff09;- &#x505a;&#x4ec0;&#x4e48;&#x4e1a;&#x52a1;","children":[],"payload":{"tag":"li","lines":"19,20"}},{"content":"&#x4e1a;&#x52a1;&#x6218;&#x7565;&#xff08;&#x4e1a;&#x52a1;&#x5c42;&#xff09;- &#x600e;&#x4e48;&#x505a;&#x8fd9;&#x4e2a;&#x4e1a;&#x52a1;","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"&#x804c;&#x80fd;&#x6218;&#x7565; - &#x5982;&#x4f55;&#x652f;&#x6491;&#x4e1a;&#x52a1;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"21,23"}}],"payload":{"tag":"h3","lines":"18,19"}},{"content":"PEST&#x5206;&#x6790;","children":[{"content":"P&#xff1a;&#x653f;&#x6cbb;&#x6cd5;&#x5f8b;&#x73af;&#x5883;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"E&#xff1a;&#x7ecf;&#x6d4e;&#x73af;&#x5883;","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"S&#xff1a;&#x793e;&#x4f1a;&#x6587;&#x5316;&#x73af;&#x5883;","children":[],"payload":{"tag":"li","lines":"26,27"}},{"content":"T&#xff1a;&#x6280;&#x672f;&#x73af;&#x5883;","children":[],"payload":{"tag":"li","lines":"27,29"}}],"payload":{"tag":"h3","lines":"23,24"}},{"content":"&#x6ce2;&#x7279;&#x4e94;&#x529b;&#x6a21;&#x578b;","children":[{"content":"&#x884c;&#x4e1a;&#x5185;&#x73b0;&#x6709;&#x4f01;&#x4e1a;&#x7ade;&#x4e89;","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"&#x65b0;&#x8fdb;&#x5165;&#x8005;&#x7684;&#x5a01;&#x80c1;","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"&#x66ff;&#x4ee3;&#x54c1;&#x7684;&#x5a01;&#x80c1;","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"&#x4f9b;&#x5e94;&#x5546;&#x7684;&#x8bae;&#x4ef7;&#x80fd;&#x529b;","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"&#x4e70;&#x65b9;&#x7684;&#x8bae;&#x4ef7;&#x80fd;&#x529b;","children":[],"payload":{"tag":"li","lines":"34,36"}}],"payload":{"tag":"h3","lines":"29,30"}},{"content":"&#x5185;&#x90e8;&#x73af;&#x5883;&#x5206;&#x6790;","children":[{"content":"&#x6838;&#x5fc3;&#x7ade;&#x4e89;&#x529b;&#xff08;VRIN&#x6846;&#x67b6;&#xff09;","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"&#x4ef7;&#x503c;&#x94fe;&#x5206;&#x6790;","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"&#x6ce2;&#x58eb;&#x987f;&#x77e9;&#x9635;&#xff08;&#x660e;&#x661f;/&#x91d1;&#x725b;/&#x95ee;&#x9898;/&#x7626;&#x72d7;&#xff09;","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"SWOT&#x5206;&#x6790;&#xff08;SO/WO/ST/WT&#x6218;&#x7565;&#xff09;","children":[],"payload":{"tag":"li","lines":"40,42"}}],"payload":{"tag":"h3","lines":"36,37"}}],"payload":{"tag":"h2","lines":"17,18"}},{"content":"&#x7b2c;&#x4e09;&#x8282; &#x4f01;&#x4e1a;&#x6218;&#x7565;&#x5236;&#x5b9a;","children":[{"content":"&#x603b;&#x4f53;&#x6218;&#x7565;","children":[{"content":"&#x53d1;&#x5c55;&#x6218;&#x7565;&#xff08;&#x5bc6;&#x96c6;&#x578b;/&#x4e00;&#x4f53;&#x5316;/&#x591a;&#x5143;&#x5316;&#xff09;","children":[],"payload":{"tag":"li","lines":"44,45"}},{"content":"&#x7a33;&#x5b9a;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"&#x7d27;&#x7f29;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"&#x7ec4;&#x5408;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"47,49"}}],"payload":{"tag":"h3","lines":"43,44"}},{"content":"&#x4e00;&#x4f53;&#x5316;&#x6218;&#x7565;","children":[{"content":"&#x524d;&#x5411;&#x4e00;&#x4f53;&#x5316;&#xff08;&#x5411;&#x4e0b;&#x6e38;/&#x5ba2;&#x6237;&#xff09;","children":[],"payload":{"tag":"li","lines":"50,51"}},{"content":"&#x540e;&#x5411;&#x4e00;&#x4f53;&#x5316;&#xff08;&#x5411;&#x4e0a;&#x6e38;/&#x4f9b;&#x5e94;&#x5546;&#xff09;","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"&#x6a2a;&#x5411;&#x4e00;&#x4f53;&#x5316;&#xff08;&#x540c;&#x884c;&#x4e1a;&#xff09;","children":[],"payload":{"tag":"li","lines":"52,54"}}],"payload":{"tag":"h3","lines":"49,50"}},{"content":"&#x7ade;&#x4e89;&#x6218;&#x7565;&#xff08;&#x6ce2;&#x7279;&#x4e09;&#x5927;&#xff09;","children":[{"content":"&#x6210;&#x672c;&#x9886;&#x5148;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"&#x5dee;&#x5f02;&#x5316;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"&#x96c6;&#x4e2d;&#x5316;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"57,59"}}],"payload":{"tag":"h3","lines":"54,55"}}],"payload":{"tag":"h2","lines":"42,43"}},{"content":"&#x7b2c;&#x56db;&#x8282; &#x4f01;&#x4e1a;&#x5546;&#x4e1a;&#x6a21;&#x5f0f;","children":[{"content":"&#x9b4f;&#x6731;&#x516d;&#x8981;&#x7d20;&#x6a21;&#x578b;","children":[{"content":"&#x5b9a;&#x4f4d;&#xff08;&#x8d77;&#x70b9;&#xff09;","children":[],"payload":{"tag":"li","lines":"61,62"}},{"content":"&#x4e1a;&#x52a1;&#x7cfb;&#x7edf;&#xff08;&#x6838;&#x5fc3;&#xff09;","children":[],"payload":{"tag":"li","lines":"62,63"}},{"content":"&#x76c8;&#x5229;&#x6a21;&#x5f0f;&#xff08;&#x5173;&#x952e;&#xff09;","children":[],"payload":{"tag":"li","lines":"63,64"}},{"content":"&#x5173;&#x952e;&#x8d44;&#x6e90;&#x80fd;&#x529b;&#xff08;&#x652f;&#x6491;&#xff09;","children":[],"payload":{"tag":"li","lines":"64,65"}},{"content":"&#x73b0;&#x91d1;&#x6d41;&#x7ed3;&#x6784;&#xff08;&#x8fd0;&#x884c;&#xff09;","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"&#x4f01;&#x4e1a;&#x4ef7;&#x503c;&#xff08;&#x7ed3;&#x679c;&#xff09;","children":[],"payload":{"tag":"li","lines":"66,68"}}],"payload":{"tag":"h3","lines":"60,61"}},{"content":"&#x5546;&#x4e1a;&#x6a21;&#x5f0f;&#x753b;&#x5e03;&#xff08;&#x4e5d;&#x6a21;&#x5757;&#xff09;","children":[{"content":"&#x5ba2;&#x6237;&#x7ec6;&#x5206;","children":[],"payload":{"tag":"li","lines":"69,70"}},{"content":"&#x4ef7;&#x503c;&#x4e3b;&#x5f20;","children":[],"payload":{"tag":"li","lines":"70,71"}},{"content":"&#x6e20;&#x9053;&#x901a;&#x8def;","children":[],"payload":{"tag":"li","lines":"71,72"}},{"content":"&#x5ba2;&#x6237;&#x5173;&#x7cfb;","children":[],"payload":{"tag":"li","lines":"72,73"}},{"content":"&#x6536;&#x5165;&#x6765;&#x6e90;","children":[],"payload":{"tag":"li","lines":"73,74"}},{"content":"&#x6838;&#x5fc3;&#x8d44;&#x6e90;","children":[],"payload":{"tag":"li","lines":"74,75"}},{"content":"&#x5173;&#x952e;&#x4e1a;&#x52a1;","children":[],"payload":{"tag":"li","lines":"75,76"}},{"content":"&#x91cd;&#x8981;&#x5408;&#x4f5c;","children":[],"payload":{"tag":"li","lines":"76,77"}},{"content":"&#x6210;&#x672c;&#x7ed3;&#x6784;","children":[],"payload":{"tag":"li","lines":"77,79"}}],"payload":{"tag":"h3","lines":"68,69"}}],"payload":{"tag":"h2","lines":"59,60"}},{"content":"&#x7b2c;&#x4e94;&#x8282; &#x4f01;&#x4e1a;&#x7ecf;&#x8425;&#x51b3;&#x7b56;","children":[{"content":"&#x51b3;&#x7b56;&#x7c7b;&#x578b;","children":[{"content":"&#x786e;&#x5b9a;&#x578b;/&#x98ce;&#x9669;&#x578b;/&#x4e0d;&#x786e;&#x5b9a;&#x578b;","children":[],"payload":{"tag":"li","lines":"81,83"}}],"payload":{"tag":"h3","lines":"80,81"}},{"content":"&#x5b9a;&#x6027;&#x51b3;&#x7b56;&#x65b9;&#x6cd5;","children":[{"content":"&#x5934;&#x8111;&#x98ce;&#x66b4;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"84,85"}},{"content":"&#x5fb7;&#x5c14;&#x83f2;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"85,86"}},{"content":"&#x540d;&#x4e49;&#x5c0f;&#x7ec4;&#x6280;&#x672f;","children":[],"payload":{"tag":"li","lines":"86,88"}}],"payload":{"tag":"h3","lines":"83,84"}},{"content":"&#x5b9a;&#x91cf;&#x51b3;&#x7b56;&#x65b9;&#x6cd5;","children":[{"content":"&#x76c8;&#x4e8f;&#x5e73;&#x8861;&#x5206;&#x6790;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"89,90"}},{"content":"&#x671f;&#x671b;&#x635f;&#x76ca;&#x51b3;&#x7b56;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"90,91"}},{"content":"&#x51b3;&#x7b56;&#x6811;&#x6cd5;","children":[],"payload":{"tag":"li","lines":"91,92"}},{"content":"&#x4e0d;&#x786e;&#x5b9a;&#x578b;&#xff08;&#x4e50;&#x89c2;/&#x60b2;&#x89c2;/&#x6298;&#x4e2d;/&#x540e;&#x6094;&#x503c;/&#x7b49;&#x6982;&#x7387;&#xff09;","children":[],"payload":{"tag":"li","lines":"92,93"}}],"payload":{"tag":"h3","lines":"88,89"}}],"payload":{"tag":"h2","lines":"79,80"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script>
+    <script>
+      ((r) => {
+          setTimeout(r);
+      })(() => {
+          const { markmap, mm } = window;
+          const toolbar = new markmap.Toolbar();
+          toolbar.attach(mm);
+          const el = toolbar.render();
+          el.setAttribute(
+              "style",
+              "position:absolute;bottom:20px;right:20px"
+          );
+          document.body.append(el);
+          
+          // Ensure the mind map fits the current view
+          setTimeout(() => {
+            if (mm && typeof mm.fit === 'function') {
+              mm.fit();
+            }
+          }, 1200);
+      });
+    </script>
+  
+
+    <!-- Add html-to-image library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+
+    <!-- Hidden element to store original Markdown content -->
+    <textarea id="original-markdown" style="display:none;"># 第一章 企业职能与战略决策
+
+## 第一节 企业与企业管理的职能
+### 企业的概念与特征
+- 经济性（以营利为目的）
+- 社会性（满足社会需要）
+- 独立性（自主经营、自负盈亏）
+- 法人性（依法设立）
+
+### 企业管理的职能（决组领控创激）
+- 决策（做正确的事）
+- 计划（蓝图与路径）
+- 组织（搭班子）
+- 领导（带队伍）
+- 控制（纠偏）
+- 创新（变革图强）
+
+## 第二节 企业战略分析
+### 企业战略的层次
+- 总体战略（公司层）- 做什么业务
+- 业务战略（业务层）- 怎么做这个业务
+- 职能战略 - 如何支撑业务战略
+
+### PEST分析
+- P：政治法律环境
+- E：经济环境
+- S：社会文化环境
+- T：技术环境
+
+### 波特五力模型
+- 行业内现有企业竞争
+- 新进入者的威胁
+- 替代品的威胁
+- 供应商的议价能力
+- 买方的议价能力
+
+### 内部环境分析
+- 核心竞争力（VRIN框架）
+- 价值链分析
+- 波士顿矩阵（明星/金牛/问题/瘦狗）
+- SWOT分析（SO/WO/ST/WT战略）
+
+## 第三节 企业战略制定
+### 总体战略
+- 发展战略（密集型/一体化/多元化）
+- 稳定战略
+- 紧缩战略
+- 组合战略
+
+### 一体化战略
+- 前向一体化（向下游/客户）
+- 后向一体化（向上游/供应商）
+- 横向一体化（同行业）
+
+### 竞争战略（波特三大）
+- 成本领先战略
+- 差异化战略
+- 集中化战略
+
+## 第四节 企业商业模式
+### 魏朱六要素模型
+- 定位（起点）
+- 业务系统（核心）
+- 盈利模式（关键）
+- 关键资源能力（支撑）
+- 现金流结构（运行）
+- 企业价值（结果）
+
+### 商业模式画布（九模块）
+- 客户细分
+- 价值主张
+- 渠道通路
+- 客户关系
+- 收入来源
+- 核心资源
+- 关键业务
+- 重要合作
+- 成本结构
+
+## 第五节 企业经营决策
+### 决策类型
+- 确定型/风险型/不确定型
+
+### 定性决策方法
+- 头脑风暴法
+- 德尔菲法
+- 名义小组技术
+
+### 定量决策方法
+- 盈亏平衡分析法
+- 期望损益决策法
+- 决策树法
+- 不确定型（乐观/悲观/折中/后悔值/等概率）</textarea>
+
+    <style>
+      /* Export toolbar styles */
+      .mm-export-toolbar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 10px;
+      }
+      .mm-export-btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      .mm-export-btn:hover {
+        background-color: #2980b9;
+      }
+      .mm-copy-btn {
+        background-color: #27ae60;
+      }
+      .mm-copy-btn:hover {
+        background-color: #219653;
+      }
+      @media print {
+        .mm-export-toolbar { display: none !important; }
+        .mm-toolbar { display: none !important; }
+        svg.markmap, svg#mindmap, #mindmap svg { 
+          display: block !important;
+          visibility: visible !important; 
+          opacity: 1 !important;
+          height: 100vh !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          max-height: 100vh !important;
+          overflow: visible !important;
+          page-break-inside: avoid !important;
+        }
+        body, html {
+          height: 100% !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        // Create bottom export toolbar
+        const exportToolbar = document.createElement('div');
+        exportToolbar.className = 'mm-export-toolbar';
+        document.body.appendChild(exportToolbar);
+        
+        // Export as PNG image
+        const pngBtn = document.createElement('button');
+        pngBtn.className = 'mm-export-btn png-export';
+        pngBtn.innerHTML = 'Export PNG';
+        pngBtn.title = 'Export as PNG image';
+        pngBtn.onclick = () => {
+          exportToImage('png');
+        };
+        exportToolbar.appendChild(pngBtn);
+
+        // Export as JPG image
+        const jpgBtn = document.createElement('button');
+        jpgBtn.className = 'mm-export-btn jpg-export';
+        jpgBtn.innerHTML = 'Export JPG';
+        jpgBtn.title = 'Export as JPG image';
+        jpgBtn.onclick = () => {
+          exportToImage('jpeg');
+        };
+        exportToolbar.appendChild(jpgBtn);
+        
+        // Export as SVG image
+        const svgBtn = document.createElement('button');
+        svgBtn.className = 'mm-export-btn svg-export';
+        svgBtn.innerHTML = 'Export SVG';
+        svgBtn.title = 'Export as SVG image';
+        svgBtn.onclick = () => {
+          exportToImage('svg');
+        };
+        exportToolbar.appendChild(svgBtn);
+
+        // Copy original Markdown button
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'mm-export-btn mm-copy-btn copy-markdown';
+        copyBtn.innerHTML = 'Copy Markdown';
+        copyBtn.title = 'Copy original Markdown content';
+        copyBtn.onclick = copyOriginalMarkdown;
+        exportToolbar.appendChild(copyBtn);
+
+        // Function to copy original Markdown content
+        function copyOriginalMarkdown() {
+          try {
+            const markdownElement = document.getElementById('original-markdown');
+            if (!markdownElement) {
+              throw new Error('Original Markdown content not found');
+            }
+            
+            const markdownContent = markdownElement.value;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(markdownContent)
+              .then(() => {
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '✓ Copied';
+                copyBtn.style.backgroundColor = '#2ecc71';
+                
+                setTimeout(() => {
+                  copyBtn.innerHTML = originalText;
+                  copyBtn.style.backgroundColor = '';
+                }, 2000);
+              })
+              .catch(err => {
+                console.error('Copy failed:', err);
+                alert('Failed to copy to clipboard, please check browser permissions');
+              });
+          } catch (e) {
+            console.error('Error copying Markdown:', e);
+            alert('Unable to copy Markdown: ' + e.message);
+          }
+        }
+
+        // Function to export image
+        function exportToImage(format) {
+          try {
+            const node = window.mm.svg._groups[0][0];
+            
+            if (!node) {
+              throw new Error('Cannot find mind map SVG element');
+            }
+
+            window.mm.fit().then(() => {
+              const options = {
+                backgroundColor: "#ffffff", 
+                quality: 1.0,
+                width: node.getBoundingClientRect().width,
+                height: node.getBoundingClientRect().height
+              };
+              
+              const exportPromise = format === 'svg' 
+                ? htmlToImage.toSvg(node, options)
+                : format === 'jpeg' 
+                  ? htmlToImage.toJpeg(node, options) 
+                  : htmlToImage.toPng(node, options);
+              
+              exportPromise
+                .then((dataUrl) => {
+                  const link = document.createElement('a');
+                  const timestamp = new Date().toISOString().slice(0, 10);
+                  link.download = `markmap-${timestamp}.${format === 'jpeg' ? 'jpg' : format === 'svg' ? 'svg' : 'png'}`;
+                  link.href = dataUrl;
+                  link.click();
+                })
+                .catch((err) => console.error("Export failed:", err));
+            })
+            .catch((err) => {
+                throw err;
+            });
+              
+          } catch (e) {
+            console.error('Error exporting image:', e);
+            alert('Image export failed: ' + e.message);
+          }
+        }
+      })();
+    </script>
+  
+</body>
+</html>

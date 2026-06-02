@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x7b2c;&#x4e03;&#x7ae0; &#x4f01;&#x4e1a;&#x521b;&#x65b0;","children":[{"content":"&#x4e00;&#x3001;&#x6280;&#x672f;&#x521b;&#x65b0;&#x5206;&#x7c7b;","children":[{"content":"&#x6309;&#x521b;&#x65b0;&#x5bf9;&#x8c61;","children":[{"content":"&#x4ea7;&#x54c1;&#x521b;&#x65b0;&#xff08;&#x9762;&#x5411;&#x7528;&#x6237;&#xff09;","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"&#x5de5;&#x827a;&#x521b;&#x65b0;&#xff08;&#x9762;&#x5411;&#x5185;&#x90e8;&#xff09;","children":[],"payload":{"tag":"li","lines":"5,7"}}],"payload":{"tag":"h3","lines":"3,4"}},{"content":"&#x6309;&#x521b;&#x65b0;&#x7a0b;&#x5ea6;","children":[{"content":"&#x539f;&#x59cb;&#x521b;&#x65b0;&#xff08;&#x98ce;&#x9669;&#x6700;&#x9ad8;&#xff0c;&#x6536;&#x76ca;&#x6700;&#x5927;&#xff09;","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"&#x96c6;&#x6210;&#x521b;&#x65b0;&#xff08;&#x8de8;&#x5b66;&#x79d1;&#x878d;&#x5408;&#xff09;","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"&#x5f15;&#x8fdb;&#x6d88;&#x5316;&#x5438;&#x6536;&#x518d;&#x521b;&#x65b0;&#xff08;&#x98ce;&#x9669;&#x6700;&#x4f4e;&#xff09;","children":[],"payload":{"tag":"li","lines":"10,12"}}],"payload":{"tag":"h3","lines":"7,8"}},{"content":"&#x6309;&#x521b;&#x65b0;&#x89c4;&#x6a21;","children":[{"content":"&#x6e10;&#x8fdb;&#x6027;&#x521b;&#x65b0;&#xff08;&#x91cf;&#x53d8;&#xff09;","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"&#x6839;&#x672c;&#x6027;/&#x7a81;&#x7834;&#x6027;&#x521b;&#x65b0;&#xff08;&#x8d28;&#x53d8;&#xff09;","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"h3","lines":"12,13"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x4e8c;&#x3001;&#x4e3b;&#x5bfc;&#x8bbe;&#x8ba1;&#x4e0e;&#x6280;&#x672f;&#x6807;&#x51c6;","children":[{"content":"&#x4e3b;&#x5bfc;&#x8bbe;&#x8ba1;","children":[],"payload":{"tag":"li","lines":"17,18"}},{"content":"&#x7f51;&#x7edc;&#x6548;&#x5e94;&#xff08;&#x6885;&#x7279;&#x5361;&#x592b;&#x5b9a;&#x5f8b;&#xff09;","children":[],"payload":{"tag":"li","lines":"18,19"}},{"content":"&#x6280;&#x672f;&#x6807;&#x51c6;&#x7ade;&#x4e89;&#x7b56;&#x7565;","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"&#x4e09;&#x3001;&#x4f01;&#x4e1a;&#x6280;&#x672f;&#x521b;&#x65b0;&#x6218;&#x7565;","children":[{"content":"&#x6309;&#x6280;&#x672f;&#x6765;&#x6e90;","children":[{"content":"&#x81ea;&#x4e3b;&#x521b;&#x65b0;","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"&#x6a21;&#x4eff;&#x521b;&#x65b0;","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"&#x5408;&#x4f5c;&#x521b;&#x65b0;","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h3","lines":"22,23"}},{"content":"&#x6309;&#x5e02;&#x573a;&#x7ade;&#x4e89;&#x5730;&#x4f4d;","children":[{"content":"&#x6280;&#x672f;&#x9886;&#x5148;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"&#x6280;&#x672f;&#x8ddf;&#x968f;&#x6218;&#x7565;","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"h3","lines":"27,28"}}],"payload":{"tag":"h2","lines":"21,22"}},{"content":"&#x56db;&#x3001;&#x4f01;&#x4e1a;&#x7ba1;&#x7406;&#x521b;&#x65b0;","children":[{"content":"&#x6d41;&#x7a0b;&#x518d;&#x9020;&#xff08;BPR&#xff09;","children":[{"content":"&#x4ee5;&#x6d41;&#x7a0b;&#x4e3a;&#x4e2d;&#x5fc3;","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"&#x4ee5;&#x5ba2;&#x6237;&#x9700;&#x6c42;&#x4e3a;&#x5bfc;&#x5411;","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"&#x5f7b;&#x5e95;&#x91cd;&#x65b0;&#x8bbe;&#x8ba1;","children":[],"payload":{"tag":"li","lines":"35,37"}}],"payload":{"tag":"h3","lines":"32,33"}},{"content":"&#x5b66;&#x4e60;&#x578b;&#x7ec4;&#x7ec7;&#xff08;&#x4e94;&#x9879;&#x4fee;&#x70bc;&#xff09;","children":[{"content":"&#x81ea;&#x6211;&#x8d85;&#x8d8a;","children":[],"payload":{"tag":"li","lines":"38,39"}},{"content":"&#x6539;&#x5584;&#x5fc3;&#x667a;&#x6a21;&#x5f0f;","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"&#x5efa;&#x7acb;&#x5171;&#x540c;&#x613f;&#x666f;","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"&#x56e2;&#x961f;&#x5b66;&#x4e60;","children":[],"payload":{"tag":"li","lines":"41,42"}},{"content":"&#x7cfb;&#x7edf;&#x601d;&#x8003;&#xff08;&#x6838;&#x5fc3;&#xff09;","children":[],"payload":{"tag":"li","lines":"42,44"}}],"payload":{"tag":"h3","lines":"37,38"}}],"payload":{"tag":"h2","lines":"31,32"}},{"content":"&#x4e94;&#x3001;2026&#x70ed;&#x70b9;&#xff1a;&#x65b0;&#x8d28;&#x751f;&#x4ea7;&#x529b;","children":[{"content":"&#x4ee5;&#x79d1;&#x6280;&#x521b;&#x65b0;&#x4e3a;&#x6838;&#x5fc3;","children":[],"payload":{"tag":"li","lines":"45,46"}},{"content":"&#x52a0;&#x5927;&#x7814;&#x53d1;&#x6295;&#x5165;","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"&#x63a8;&#x52a8;&#x4ea7;&#x5b66;&#x7814;&#x878d;&#x5408;","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"&#x6570;&#x5b57;&#x7ecf;&#x6d4e;&#x4e0e;&#x5b9e;&#x4f53;&#x7ecf;&#x6d4e;&#x878d;&#x5408;","children":[],"payload":{"tag":"li","lines":"48,49"}}],"payload":{"tag":"h2","lines":"44,45"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script>
+    <script>
+      ((r) => {
+          setTimeout(r);
+      })(() => {
+          const { markmap, mm } = window;
+          const toolbar = new markmap.Toolbar();
+          toolbar.attach(mm);
+          const el = toolbar.render();
+          el.setAttribute(
+              "style",
+              "position:absolute;bottom:20px;right:20px"
+          );
+          document.body.append(el);
+          
+          // Ensure the mind map fits the current view
+          setTimeout(() => {
+            if (mm && typeof mm.fit === 'function') {
+              mm.fit();
+            }
+          }, 1200);
+      });
+    </script>
+  
+
+    <!-- Add html-to-image library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+
+    <!-- Hidden element to store original Markdown content -->
+    <textarea id="original-markdown" style="display:none;"># 第七章 企业创新
+
+## 一、技术创新分类
+### 按创新对象
+- 产品创新（面向用户）
+- 工艺创新（面向内部）
+
+### 按创新程度
+- 原始创新（风险最高，收益最大）
+- 集成创新（跨学科融合）
+- 引进消化吸收再创新（风险最低）
+
+### 按创新规模
+- 渐进性创新（量变）
+- 根本性/突破性创新（质变）
+
+## 二、主导设计与技术标准
+- 主导设计
+- 网络效应（梅特卡夫定律）
+- 技术标准竞争策略
+
+## 三、企业技术创新战略
+### 按技术来源
+- 自主创新
+- 模仿创新
+- 合作创新
+
+### 按市场竞争地位
+- 技术领先战略
+- 技术跟随战略
+
+## 四、企业管理创新
+### 流程再造（BPR）
+- 以流程为中心
+- 以客户需求为导向
+- 彻底重新设计
+
+### 学习型组织（五项修炼）
+- 自我超越
+- 改善心智模式
+- 建立共同愿景
+- 团队学习
+- 系统思考（核心）
+
+## 五、2026热点：新质生产力
+- 以科技创新为核心
+- 加大研发投入
+- 推动产学研融合
+- 数字经济与实体经济融合</textarea>
+
+    <style>
+      /* Export toolbar styles */
+      .mm-export-toolbar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 10px;
+      }
+      .mm-export-btn {
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+      .mm-export-btn:hover {
+        background-color: #2980b9;
+      }
+      .mm-copy-btn {
+        background-color: #27ae60;
+      }
+      .mm-copy-btn:hover {
+        background-color: #219653;
+      }
+      @media print {
+        .mm-export-toolbar { display: none !important; }
+        .mm-toolbar { display: none !important; }
+        svg.markmap, svg#mindmap, #mindmap svg { 
+          display: block !important;
+          visibility: visible !important; 
+          opacity: 1 !important;
+          height: 100vh !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          max-height: 100vh !important;
+          overflow: visible !important;
+          page-break-inside: avoid !important;
+        }
+        body, html {
+          height: 100% !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+        }
+      }
+    </style>
+
+    <script>
+      (function() {
+        // Create bottom export toolbar
+        const exportToolbar = document.createElement('div');
+        exportToolbar.className = 'mm-export-toolbar';
+        document.body.appendChild(exportToolbar);
+        
+        // Export as PNG image
+        const pngBtn = document.createElement('button');
+        pngBtn.className = 'mm-export-btn png-export';
+        pngBtn.innerHTML = 'Export PNG';
+        pngBtn.title = 'Export as PNG image';
+        pngBtn.onclick = () => {
+          exportToImage('png');
+        };
+        exportToolbar.appendChild(pngBtn);
+
+        // Export as JPG image
+        const jpgBtn = document.createElement('button');
+        jpgBtn.className = 'mm-export-btn jpg-export';
+        jpgBtn.innerHTML = 'Export JPG';
+        jpgBtn.title = 'Export as JPG image';
+        jpgBtn.onclick = () => {
+          exportToImage('jpeg');
+        };
+        exportToolbar.appendChild(jpgBtn);
+        
+        // Export as SVG image
+        const svgBtn = document.createElement('button');
+        svgBtn.className = 'mm-export-btn svg-export';
+        svgBtn.innerHTML = 'Export SVG';
+        svgBtn.title = 'Export as SVG image';
+        svgBtn.onclick = () => {
+          exportToImage('svg');
+        };
+        exportToolbar.appendChild(svgBtn);
+
+        // Copy original Markdown button
+        const copyBtn = document.createElement('button');
+        copyBtn.className = 'mm-export-btn mm-copy-btn copy-markdown';
+        copyBtn.innerHTML = 'Copy Markdown';
+        copyBtn.title = 'Copy original Markdown content';
+        copyBtn.onclick = copyOriginalMarkdown;
+        exportToolbar.appendChild(copyBtn);
+
+        // Function to copy original Markdown content
+        function copyOriginalMarkdown() {
+          try {
+            const markdownElement = document.getElementById('original-markdown');
+            if (!markdownElement) {
+              throw new Error('Original Markdown content not found');
+            }
+            
+            const markdownContent = markdownElement.value;
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(markdownContent)
+              .then(() => {
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '✓ Copied';
+                copyBtn.style.backgroundColor = '#2ecc71';
+                
+                setTimeout(() => {
+                  copyBtn.innerHTML = originalText;
+                  copyBtn.style.backgroundColor = '';
+                }, 2000);
+              })
+              .catch(err => {
+                console.error('Copy failed:', err);
+                alert('Failed to copy to clipboard, please check browser permissions');
+              });
+          } catch (e) {
+            console.error('Error copying Markdown:', e);
+            alert('Unable to copy Markdown: ' + e.message);
+          }
+        }
+
+        // Function to export image
+        function exportToImage(format) {
+          try {
+            const node = window.mm.svg._groups[0][0];
+            
+            if (!node) {
+              throw new Error('Cannot find mind map SVG element');
+            }
+
+            window.mm.fit().then(() => {
+              const options = {
+                backgroundColor: "#ffffff", 
+                quality: 1.0,
+                width: node.getBoundingClientRect().width,
+                height: node.getBoundingClientRect().height
+              };
+              
+              const exportPromise = format === 'svg' 
+                ? htmlToImage.toSvg(node, options)
+                : format === 'jpeg' 
+                  ? htmlToImage.toJpeg(node, options) 
+                  : htmlToImage.toPng(node, options);
+              
+              exportPromise
+                .then((dataUrl) => {
+                  const link = document.createElement('a');
+                  const timestamp = new Date().toISOString().slice(0, 10);
+                  link.download = `markmap-${timestamp}.${format === 'jpeg' ? 'jpg' : format === 'svg' ? 'svg' : 'png'}`;
+                  link.href = dataUrl;
+                  link.click();
+                })
+                .catch((err) => console.error("Export failed:", err));
+            })
+            .catch((err) => {
+                throw err;
+            });
+              
+          } catch (e) {
+            console.error('Error exporting image:', e);
+            alert('Image export failed: ' + e.message);
+          }
+        }
+      })();
+    </script>
+  
+</body>
+</html>
