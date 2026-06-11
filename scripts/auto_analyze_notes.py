@@ -262,9 +262,21 @@ def auto_git_sync(paths: list[Path], message: str) -> None:
     for path in paths:
         resolved = path.resolve()
         try:
-            rel_paths.append(str(resolved.relative_to(ROOT)))
+            rel_path = str(resolved.relative_to(ROOT))
         except ValueError:
             continue
+        if resolved.exists():
+            rel_paths.append(rel_path)
+            continue
+        tracked = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", "--", rel_path],
+            cwd=ROOT,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+        if tracked.returncode == 0:
+            rel_paths.append(rel_path)
 
     if not rel_paths:
         return

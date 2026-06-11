@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.youzhuo.obsidian.telegram-ingest</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/lqj/Nutstore Files/obsidian/scripts/run_mac_telegram_ingest.sh</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/lqj/Nutstore Files/obsidian/logs/telegram-ingest.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/lqj/Nutstore Files/obsidian/logs/telegram-ingest.err.log</string>
+  <key>WorkingDirectory</key>
+  <string>/Users/lqj/Nutstore Files/obsidian</string>
+</dict>
+</plist>

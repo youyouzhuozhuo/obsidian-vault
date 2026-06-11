@@ -11,6 +11,7 @@ import re
 import json
 import time
 import hashlib
+import argparse
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -70,6 +71,16 @@ def extract_yaml_field(fm_text, field):
     return ""
 
 
+def already_ai_analyzed(content):
+    return (
+        "## AI 分析" in content
+        or 'analysis_status: "done"' in content
+        or "analysis_status: done" in content
+        or 'analysis_status: "skipped"' in content
+        or "analysis_status: skipped" in content
+    )
+
+
 def process_article_file(filepath, filename, vocab_str, processed):
     """处理单篇微信公众号文章"""
     file_hash_val = file_hash(filepath)
@@ -80,6 +91,11 @@ def process_article_file(filepath, filename, vocab_str, processed):
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
     except Exception:
+        return False
+
+    if already_ai_analyzed(content):
+        processed[filename] = file_hash_val
+        save_processed(processed)
         return False
 
     fm_text, body = parse_frontmatter(content)
@@ -165,6 +181,11 @@ def process_daily_summary(filepath, filename, vocab_str, processed):
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
     except Exception:
+        return False
+
+    if already_ai_analyzed(content):
+        processed[filename] = file_hash_val
+        save_processed(processed)
         return False
 
     fm_text, body = parse_frontmatter(content)
@@ -271,6 +292,10 @@ def scan_and_process(vocab_str):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="微信内容处理器")
+    parser.add_argument("--once", action="store_true", help="只扫描处理一轮后退出")
+    args = parser.parse_args()
+
     os.makedirs(os.path.join(INBOX_PATH, "assets"), exist_ok=True)
     print("🚀 微信内容处理器已启动（持续监听模式）...")
 
@@ -289,6 +314,9 @@ def main():
 
         except Exception as e:
             print(f"⚠️ 扫描错误: {e}")
+
+        if args.once:
+            break
 
         time.sleep(POLL_INTERVAL)
 
